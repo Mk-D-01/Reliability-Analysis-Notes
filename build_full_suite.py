@@ -244,8 +244,38 @@ def convert_md_to_html_content(md_text):
                 stmt = p_text
                 sol = ""
 
-            stmt_html = parse_inline_formatting(stmt).replace("\n\n", "<br><br>").replace("\n- ", "<br>• ")
-            sol_html = parse_inline_formatting(sol).replace("\n\n", "<br><br>").replace("\n- ", "<br>• ")
+            def render_problem_text(txt):
+                """Inline formatting plus pipe tables (tables would otherwise print as raw markdown)."""
+                chunks, buf, rows = [], [], []
+
+                def flush_buf():
+                    if buf:
+                        chunks.append(parse_inline_formatting("\n".join(buf)).replace("\n\n", "<br><br>").replace("\n- ", "<br>• "))
+                        buf.clear()
+
+                def flush_rows():
+                    if rows:
+                        out = '<div class="table-responsive"><table class="custom-table">\n<thead><tr>' + ''.join(f'<th>{c}</th>' for c in rows[0]) + '</tr></thead>\n<tbody>\n'
+                        out += ''.join('<tr>' + ''.join(f'<td>{c}</td>' for c in r) + '</tr>\n' for r in rows[1:])
+                        chunks.append(out + '</tbody></table></div>\n')
+                        rows.clear()
+
+                for ln in txt.split("\n"):
+                    if ln.strip().startswith("|") and ln.strip().endswith("|"):
+                        flush_buf()
+                        parts = [c.strip() for c in ln.strip().split("|")[1:-1]]
+                        if all(re.match(r'^:?-+:?$', c) for c in parts if c):
+                            continue
+                        rows.append([parse_inline_formatting(c) for c in parts])
+                    else:
+                        flush_rows()
+                        buf.append(ln)
+                flush_rows()
+                flush_buf()
+                return "".join(chunks)
+
+            stmt_html = render_problem_text(stmt)
+            sol_html = render_problem_text(sol)
 
             card_html = f'''
             <div class="problem-card">
@@ -392,7 +422,7 @@ def build_interactive_html():
     nav_links_html = "".join(f'<a href="#{nav[0]}">{nav[1]}</a>\n' for nav in module_nav)
 
     # Generate Cheat Sheet Cards for all 12 modules
-    cheat_sheet_cards = """
+    cheat_sheet_cards = r"""
     <!-- Category 1: Reliability & Hazard Functions -->
     <div class="cheat-card" data-cat="rel">
         <div class="cheat-cat-badge">Reliability Foundations</div>
@@ -539,7 +569,7 @@ def build_interactive_html():
     """
 
     with open("template_v2.html", "w", encoding="utf-8") as tf:
-        tf.write('''<!DOCTYPE html>
+        tf.write(r'''<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -551,16 +581,14 @@ def build_interactive_html():
     <meta name="keywords" content="Reliability Engineering, Statistical Learning, Probability, Weibull, Sampling Distribution, Hypothesis Testing, ANOVA, Linear Regression, Logistic Regression, Support Vector Machines, Prof. Monalisa Sarma, IIT Kharagpur">
     
     <!-- Google Fonts: Inter & Outfit -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/fonts.css">
     
     <!-- MathJax 3 with LaTeX Configuration -->
     <script>
     window.MathJax = {
         tex: {
-            inlineMath: [['$', '$'], ['\\\\(', '\\\\)']],
-            displayMath: [['$$', '$$'], ['\\\\[', '\\\\]']],
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']],
             processEscapes: true,
             processEnvironments: true
         },
@@ -576,7 +604,7 @@ def build_interactive_html():
         }
     };
     </script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script id="MathJax-script" async src="vendor/mathjax/es5/tex-mml-chtml.js"></script>
 
     <style>
         /* ==========================================================================

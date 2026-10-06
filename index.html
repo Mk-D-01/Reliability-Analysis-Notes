@@ -10,9 +10,7 @@
     <meta name="keywords" content="Reliability Engineering, Statistical Learning, Probability, Weibull, Sampling Distribution, Hypothesis Testing, ANOVA, Linear Regression, Logistic Regression, Support Vector Machines, Prof. Monalisa Sarma, IIT Kharagpur">
     
     <!-- Google Fonts: Inter & Outfit -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/fonts.css">
     
     <!-- MathJax 3 with LaTeX Configuration -->
     <script>
@@ -35,7 +33,7 @@
         }
     };
     </script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script id="MathJax-script" async src="vendor/mathjax/es5/tex-mml-chtml.js"></script>
 
     <style>
         /* ==========================================================================
@@ -3672,12 +3670,17 @@ $$</div><br>• <strong>Step 3: Critical Value & Rejection Region:</strong>
                     <h4 class="problem-title">Problem 7.2: Chi-Square Test of Independence for Failure Modes</h4>
                 </div>
                 <div class="problem-statement">
-                    <strong>Statement:</strong> A quality audit records component failure modes across three manufacturing lines:<br><br>| Line \ Failure Mode | Electrical Short (<span class="math-inline">$O_{i1}$</span>) | Mechanical Fracture (<span class="math-inline">$O_{i2}$</span>) | Total |
-| :--- | :--- | :--- | :--- |
-| <strong>Line 1</strong> | 20 | 30 | 50 |
-| <strong>Line 2</strong> | 40 | 60 | 100 |
-| <strong>Line 3</strong> | 10 | 40 | 50 |
-| <strong>Total</strong> | <strong>70</strong> | <strong>130</strong> | <strong>200</strong> |<br><br>Test at <span class="math-inline">$\alpha = 0.05$</span> whether failure mode is independent of manufacturing line.
+                    <strong>Statement:</strong> A quality audit records component failure modes across three manufacturing lines:
+<div class="table-responsive"><table class="custom-table">
+<thead><tr><th>Line \ Failure Mode</th><th>Electrical Short (<span class="math-inline">$O_{i1}$</span>)</th><th>Mechanical Fracture (<span class="math-inline">$O_{i2}$</span>)</th><th>Total</th></tr></thead>
+<tbody>
+<tr><td><strong>Line 1</strong></td><td>20</td><td>30</td><td>50</td></tr>
+<tr><td><strong>Line 2</strong></td><td>40</td><td>60</td><td>100</td></tr>
+<tr><td><strong>Line 3</strong></td><td>10</td><td>40</td><td>50</td></tr>
+<tr><td><strong>Total</strong></td><td><strong>70</strong></td><td><strong>130</strong></td><td><strong>200</strong></td></tr>
+</tbody></table></div>
+
+Test at <span class="math-inline">$\alpha = 0.05$</span> whether failure mode is independent of manufacturing line.
                 </div>
                 <details class="solution-details">
                     <summary class="solution-toggle">
@@ -4032,11 +4035,15 @@ $$</div></p>
   - <span class="math-inline">$df_{\text{total}} = N - 1 = 14$</span><br>• <strong>Step 4: Compute <span class="math-inline">$F$</span>-Statistic:</strong>
   <div class="math-display-wrap">$$
 F_{\text{calc}} = \frac{MSB}{MSE} = \frac{180.0}{10.0} = 18.00
-$$</div><br>• <strong>Step 5: ANOVA Summary Table:</strong><br><br>| Source of Variation | Sum of Squares (<span class="math-inline">$SS$</span>) | <span class="math-inline">$df$</span> | Mean Square (<span class="math-inline">$MS$</span>) | <span class="math-inline">$F_{\text{calc}}$</span> | <span class="math-inline">$F_{\text{crit}} (0.05, 2, 12)$</span> | <span class="math-inline">$p$</span>-value |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| <strong>Curing Temperature</strong> | 360.0 | 2 | 180.0 | <strong>18.00</strong> | 3.89 | <span class="math-inline">$&lt; 0.001$</span> |
-| <strong>Error (Within)</strong> | 120.0 | 12 | 10.0 | | | |
-| <strong>Total</strong> | 480.0 | 14 | | | | |<br><br>- <strong>Step 6: Conclusion:</strong>
+$$</div><br>• <strong>Step 5: ANOVA Summary Table:</strong>
+<div class="table-responsive"><table class="custom-table">
+<thead><tr><th>Source of Variation</th><th>Sum of Squares (<span class="math-inline">$SS$</span>)</th><th><span class="math-inline">$df$</span></th><th>Mean Square (<span class="math-inline">$MS$</span>)</th><th><span class="math-inline">$F_{\text{calc}}$</span></th><th><span class="math-inline">$F_{\text{crit}} (0.05, 2, 12)$</span></th><th><span class="math-inline">$p$</span>-value</th></tr></thead>
+<tbody>
+<tr><td><strong>Curing Temperature</strong></td><td>360.0</td><td>2</td><td>180.0</td><td><strong>18.00</strong></td><td>3.89</td><td><span class="math-inline">$&lt; 0.001$</span></td></tr>
+<tr><td><strong>Error (Within)</strong></td><td>120.0</td><td>12</td><td>10.0</td><td></td><td></td><td></td></tr>
+<tr><td><strong>Total</strong></td><td>480.0</td><td>14</td><td></td><td></td><td></td><td></td></tr>
+</tbody></table></div>
+<br>• <strong>Step 6: Conclusion:</strong>
   - Since <span class="math-inline">$F_{\text{calc}} = 18.00 \gg 3.89$</span>, we <strong>reject <span class="math-inline">$H_0$</span></strong> (<span class="math-inline">$p &lt; 0.001$</span>). Curing temperature has a highly statistically significant effect on tensile strength.
                     </div>
                 </details>
@@ -4357,13 +4364,18 @@ $$</div></p>
                     <h4 class="problem-title">Problem 9.1: Complete Simple Linear Regression & ANOVA Analysis</h4>
                 </div>
                 <div class="problem-statement">
-                    <strong>Statement:</strong> A reliability test measures the operating temperature <span class="math-inline">$X$</span> (<span class="math-inline">$^\circ\text{C}$</span>) and failure rate <span class="math-inline">$Y$</span> (<span class="math-inline">$10^{-4}\text{ failures/hour}$</span>) for <span class="math-inline">$n = 5$</span> electronic modules:<br><br>| Module | Temperature <span class="math-inline">$X$</span> (<span class="math-inline">$^\circ\text{C}$</span>) | Failure Rate <span class="math-inline">$Y$</span> (<span class="math-inline">$10^{-4}\text{/hr}$</span>) |
-| :--- | :--- | :--- |
-| <strong>1</strong> | 20 | 1.5 |
-| <strong>2</strong> | 30 | 2.0 |
-| <strong>3</strong> | 40 | 3.5 |
-| <strong>4</strong> | 50 | 4.0 |
-| <strong>5</strong> | 60 | 6.0 |<br><br>1. Calculate the sample means <span class="math-inline">$\bar{x}, \bar{y}$</span>, summary sums <span class="math-inline">$S_{xx}, S_{yy}, S_{xy}$</span>, and Pearson correlation <span class="math-inline">$r$</span>.
+                    <strong>Statement:</strong> A reliability test measures the operating temperature <span class="math-inline">$X$</span> (<span class="math-inline">$^\circ\text{C}$</span>) and failure rate <span class="math-inline">$Y$</span> (<span class="math-inline">$10^{-4}\text{ failures/hour}$</span>) for <span class="math-inline">$n = 5$</span> electronic modules:
+<div class="table-responsive"><table class="custom-table">
+<thead><tr><th>Module</th><th>Temperature <span class="math-inline">$X$</span> (<span class="math-inline">$^\circ\text{C}$</span>)</th><th>Failure Rate <span class="math-inline">$Y$</span> (<span class="math-inline">$10^{-4}\text{/hr}$</span>)</th></tr></thead>
+<tbody>
+<tr><td><strong>1</strong></td><td>20</td><td>1.5</td></tr>
+<tr><td><strong>2</strong></td><td>30</td><td>2.0</td></tr>
+<tr><td><strong>3</strong></td><td>40</td><td>3.5</td></tr>
+<tr><td><strong>4</strong></td><td>50</td><td>4.0</td></tr>
+<tr><td><strong>5</strong></td><td>60</td><td>6.0</td></tr>
+</tbody></table></div>
+
+1. Calculate the sample means <span class="math-inline">$\bar{x}, \bar{y}$</span>, summary sums <span class="math-inline">$S_{xx}, S_{yy}, S_{xy}$</span>, and Pearson correlation <span class="math-inline">$r$</span>.
 2. Derive the OLS regression equation <span class="math-inline">$\hat{y} = \hat{\beta}_0 + \hat{\beta}_1 x$</span>.
 3. Compute <span class="math-inline">$SST, SSR, SSE$</span>, and the coefficient of determination <span class="math-inline">$R^2$</span>.
 4. Conduct the ANOVA <span class="math-inline">$F$</span>-test for significance of regression at <span class="math-inline">$\alpha = 0.05$</span>.
@@ -5665,7 +5677,7 @@ $$</div>
                     <div class="quiz-opt" data-opt="3">Bell-shaped hazard rate, governed by Normal distribution.</div>
                 </div>
                 <div class="quiz-explanation">
-                    <strong>Explanation:</strong> In Phase II, failures occur predominantly due to random chance overstress shocks at a constant rate $\lambda = 	ext{const}$, which is uniquely characterized by the memoryless Exponential distribution $R(t) = e^{-\lambda t}$.
+                    <strong>Explanation:</strong> In Phase II, failures occur predominantly due to random chance overstress shocks at a constant rate $\lambda = \text{const}$, which is uniquely characterized by the memoryless Exponential distribution $R(t) = e^{-\lambda t}$.
                 </div>
             </div>
 
@@ -5674,18 +5686,18 @@ $$</div>
                 <div class="quiz-q-text">2. Why is Analysis of Variance (ANOVA) used instead of multiple pairwise two-sample $t$-tests when comparing $k \ge 3$ treatment group means?</div>
                 <div class="quiz-options">
                     <div class="quiz-opt" data-opt="0">ANOVA requires fewer assumptions than the two-sample $t$-test.</div>
-                    <div class="quiz-opt" data-opt="1">Pairwise $t$-tests inflate the probability of committing a Type II error ($eta$).</div>
-                    <div class="quiz-opt" data-opt="2">Multiple pairwise $t$-tests severely inflate the Family-Wise Type I Error Rate ($lpha_{	ext{FW}} = 1 - (1-lpha)^m$).</div>
+                    <div class="quiz-opt" data-opt="1">Pairwise $t$-tests inflate the probability of committing a Type II error ($\beta$).</div>
+                    <div class="quiz-opt" data-opt="2">Multiple pairwise $t$-tests severely inflate the Family-Wise Type I Error Rate ($\alpha_{\text{FW}} = 1 - (1-\alpha)^m$).</div>
                     <div class="quiz-opt" data-opt="3">ANOVA eliminates the need for calculating within-group sample variances.</div>
                 </div>
                 <div class="quiz-explanation">
-                    <strong>Explanation:</strong> For $k$ groups, there are $m = inom{k}{2}$ pairwise tests. If each test is conducted at $lpha = 0.05$, the overall false positive rate inflates to $1 - (0.95)^m$ (e.g., $40.1\%$ for $k=5$). ANOVA evaluates all groups simultaneously in an omnibus $F$-test.
+                    <strong>Explanation:</strong> For $k$ groups, there are $m = \binom{k}{2}$ pairwise tests. If each test is conducted at $\alpha = 0.05$, the overall false positive rate inflates to $1 - (0.95)^m$ (e.g., $40.1\%$ for $k=5$). ANOVA evaluates all groups simultaneously in an omnibus $F$-test.
                 </div>
             </div>
 
             <!-- Quiz 3: SVM Support Vectors -->
             <div class="quiz-question" data-correct="0">
-                <div class="quiz-q-text">3. In a Hard-Margin Support Vector Machine (SVM), which training data points have strictly positive Lagrange multipliers ($lpha_i > 0$)?</div>
+                <div class="quiz-q-text">3. In a Hard-Margin Support Vector Machine (SVM), which training data points have strictly positive Lagrange multipliers ($\alpha_i > 0$)?</div>
                 <div class="quiz-options">
                     <div class="quiz-opt" data-opt="0">Only the Support Vectors that lie directly on the canonical margin boundaries ($y_i(\mathbf{w}^T \mathbf{x}_i + b) = 1$).</div>
                     <div class="quiz-opt" data-opt="1">All data points in the training set.</div>
@@ -5693,13 +5705,13 @@ $$</div>
                     <div class="quiz-opt" data-opt="3">Only points with misclassification errors.</div>
                 </div>
                 <div class="quiz-explanation">
-                    <strong>Explanation:</strong> By the KKT complementary slackness condition $lpha_i [y_i(\mathbf{w}^T \mathbf{x}_i + b) - 1] = 0$, any point strictly outside the margin has $y_i(\mathbf{w}^T\mathbf{x}_i+b) > 1 \implies lpha_i = 0$. Only points with $lpha_i > 0$ (the Support Vectors on the margin) determine $\mathbf{w}$ and $b$.
+                    <strong>Explanation:</strong> By the KKT complementary slackness condition $\alpha_i [y_i(\mathbf{w}^T \mathbf{x}_i + b) - 1] = 0$, any point strictly outside the margin has $y_i(\mathbf{w}^T\mathbf{x}_i+b) > 1 \implies \alpha_i = 0$. Only points with $\alpha_i > 0$ (the Support Vectors on the margin) determine $\mathbf{w}$ and $b$.
                 </div>
             </div>
 
             <!-- Quiz 4: Logistic Regression Odds Ratio -->
             <div class="quiz-question" data-correct="3">
-                <div class="quiz-q-text">4. In a logistic regression model $	ext{logit}(p) = eta_0 + eta_1 X$, what does the exponentiated coefficient $e^{eta_1}$ represent?</div>
+                <div class="quiz-q-text">4. In a logistic regression model $\text{logit}(p) = \beta_0 + \beta_1 X$, what does the exponentiated coefficient $e^{\beta_1}$ represent?</div>
                 <div class="quiz-options">
                     <div class="quiz-opt" data-opt="0">The change in the predicted probability $p$ per unit increase in $X$.</div>
                     <div class="quiz-opt" data-opt="1">The Pearson correlation coefficient between $X$ and $Y$.</div>
@@ -5707,7 +5719,7 @@ $$</div>
                     <div class="quiz-opt" data-opt="3">The multiplicative change in the odds of success per unit increase in $X$ (the Odds Ratio).</div>
                 </div>
                 <div class="quiz-explanation">
-                    <strong>Explanation:</strong> $eta_1$ represents the additive change in log-odds. Exponentiating yields $	ext{Odds}(X+1)/	ext{Odds}(X) = e^{eta_1}$, which is the multiplicative factor by which the odds of failure/success change per unit increase in $X$.
+                    <strong>Explanation:</strong> $\beta_1$ represents the additive change in log-odds. Exponentiating yields $\text{Odds}(X+1)/\text{Odds}(X) = e^{\beta_1}$, which is the multiplicative factor by which the odds of failure/success change per unit increase in $X$.
                 </div>
             </div>
         </section>
@@ -5741,8 +5753,8 @@ $$</div>
     <div class="cheat-card" data-cat="rel">
         <div class="cheat-cat-badge">Reliability Foundations</div>
         <h4 class="cheat-title">Reliability &amp; Hazard Rate Fundamental Equations</h4>
-        <div class="cheat-formula">$$R(t) = P(T &gt; t) = \exp\left(-\int_0^t h(u)duight)$$</div>
-        <div class="cheat-formula">$$h(t) = rac{f(t)}{R(t)} = -rac{d}{dt}\ln R(t), \quad 	ext{MTTF} = \int_0^\infty R(t) dt$$</div>
+        <div class="cheat-formula">$$R(t) = P(T &gt; t) = \exp\left(-\int_0^t h(u)du\right)$$</div>
+        <div class="cheat-formula">$$h(t) = \frac{f(t)}{R(t)} = -\frac{d}{dt}\ln R(t), \quad \text{MTTF} = \int_0^\infty R(t) dt$$</div>
         <div class="cheat-solved">
             <strong>Problems Solved:</strong> Converting between hazard function $h(t)$, PDF $f(t)$, CDF $F(t)$, and reliability $R(t)$; finding MTTF from survival curves.
         </div>
@@ -5752,8 +5764,8 @@ $$</div>
     <div class="cheat-card" data-cat="sys">
         <div class="cheat-cat-badge">System Reliability</div>
         <h4 class="cheat-title">Series, Parallel &amp; $k$-out-of-$n$ Active Redundancy</h4>
-        <div class="cheat-formula">$$R_{	ext{series}} = \prod_{i=1}^n R_i, \quad R_{	ext{parallel}} = 1 - \prod_{i=1}^n(1 - R_i)$$</div>
-        <div class="cheat-formula">$$R_{k/n} = \sum_{i=k}^n inom{n}{i} R^i (1-R)^{n-i}$$</div>
+        <div class="cheat-formula">$$R_{\text{series}} = \prod_{i=1}^n R_i, \quad R_{\text{parallel}} = 1 - \prod_{i=1}^n(1 - R_i)$$</div>
+        <div class="cheat-formula">$$R_{k/n} = \sum_{i=k}^n \binom{n}{i} R^i (1-R)^{n-i}$$</div>
         <div class="cheat-solved">
             <strong>Problems Solved:</strong> Weakest-link series systems; active parallel redundancy; multi-engine aircraft survival; majority voting gates.
         </div>
@@ -5763,7 +5775,7 @@ $$</div>
     <div class="cheat-card" data-cat="bayes">
         <div class="cheat-cat-badge">Probability &amp; Bayes</div>
         <h4 class="cheat-title">Bayes' Theorem &amp; Total Probability</h4>
-        <div class="cheat-formula">$$P(B_j \mid A) = rac{P(A \mid B_j) P(B_j)}{\sum_{i=1}^k P(A \mid B_i) P(B_i)}$$</div>
+        <div class="cheat-formula">$$P(B_j \mid A) = \frac{P(A \mid B_j) P(B_j)}{\sum_{i=1}^k P(A \mid B_i) P(B_i)}$$</div>
         <div class="cheat-solved">
             <strong>Problems Solved:</strong> Multi-factory defect attribution; medical test false-positive rates; sensor diagnostic symptom updating.
         </div>
@@ -5773,8 +5785,8 @@ $$</div>
     <div class="cheat-card" data-cat="disc">
         <div class="cheat-cat-badge">Discrete Distributions</div>
         <h4 class="cheat-title">Binomial, Poisson &amp; Geometric Models</h4>
-        <div class="cheat-formula">$$	ext{Binomial: } P(X=k) = inom{n}{k}p^k(1-p)^{n-k}$$</div>
-        <div class="cheat-formula">$$	ext{Poisson: } P(X=k) = rac{e^{-\lambda}\lambda^k}{k!}, \quad 	ext{Geometric: } P(X&gt;k)=(1-p)^k$$</div>
+        <div class="cheat-formula">$$\text{Binomial: } P(X=k) = \binom{n}{k}p^k(1-p)^{n-k}$$</div>
+        <div class="cheat-formula">$$\text{Poisson: } P(X=k) = \frac{e^{-\lambda}\lambda^k}{k!}, \quad \text{Geometric: } P(X&gt;k)=(1-p)^k$$</div>
         <div class="cheat-solved">
             <strong>Problems Solved:</strong> Lot acceptance testing; rare defect density per wafer/PCB; trials until first component breakdown.
         </div>
@@ -5784,11 +5796,11 @@ $$</div>
     <div class="cheat-card" data-cat="cont">
         <div class="cheat-cat-badge">Continuous Distributions</div>
         <h4 class="cheat-title">Exponential, Normal &amp; Weibull Distributions</h4>
-        <div class="cheat-formula">$$	ext{Exponential: } R(t) = e^{-\lambda t}, \quad 	ext{MTTF} = 1/\lambda$$</div>
-        <div class="cheat-formula">$$	ext{Weibull: } R(t) = \exp\left[ -(t/	heta)^eta ight], \quad h(t) = rac{eta}{	heta}(t/	heta)^{eta-1}$$</div>
-        <div class="cheat-formula">$$	ext{Tolerance Clearance: } C = X_2 - X_1 \sim N(\mu_2 - \mu_1, \sigma_1^2 + \sigma_2^2)$$</div>
+        <div class="cheat-formula">$$\text{Exponential: } R(t) = e^{-\lambda t}, \quad \text{MTTF} = 1/\lambda$$</div>
+        <div class="cheat-formula">$$\text{Weibull: } R(t) = \exp\left[ -(t/\theta)^\beta \right], \quad h(t) = \frac{\beta}{\theta}(t/\theta)^{\beta-1}$$</div>
+        <div class="cheat-formula">$$\text{Tolerance Clearance: } C = X_2 - X_1 \sim N(\mu_2 - \mu_1, \sigma_1^2 + \sigma_2^2)$$</div>
         <div class="cheat-solved">
-            <strong>Problems Solved:</strong> Constant failure rate mission times; shaft-bearing interference probability; Weibull infant ($eta&lt;1$) vs wearout ($eta&gt;1$) modeling.
+            <strong>Problems Solved:</strong> Constant failure rate mission times; shaft-bearing interference probability; Weibull infant ($\beta&lt;1$) vs wearout ($\beta&gt;1$) modeling.
         </div>
     </div>
 
@@ -5796,8 +5808,8 @@ $$</div>
     <div class="cheat-card" data-cat="samp">
         <div class="cheat-cat-badge">Sampling &amp; CLT</div>
         <h4 class="cheat-title">Sample Mean &amp; Variance Distributions</h4>
-        <div class="cheat-formula">$$Z = rac{ar{X} - \mu}{\sigma/\sqrt{n}} \sim N(0, 1), \quad \chi^2 = rac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)$$</div>
-        <div class="cheat-formula">$$F = rac{S_1^2 / \sigma_1^2}{S_2^2 / \sigma_2^2} \sim F(n_1-1, n_2-1)$$</div>
+        <div class="cheat-formula">$$Z = \frac{\bar{X} - \mu}{\sigma/\sqrt{n}} \sim N(0, 1), \quad \chi^2 = \frac{(n-1)S^2}{\sigma^2} \sim \chi^2(n-1)$$</div>
+        <div class="cheat-formula">$$F = \frac{S_1^2 / \sigma_1^2}{S_2^2 / \sigma_2^2} \sim F(n_1-1, n_2-1)$$</div>
         <div class="cheat-solved">
             <strong>Problems Solved:</strong> Evaluating sample average probabilities for large samples ($n \ge 30$); sample variance compliance tests; comparing two machine variances.
         </div>
@@ -5807,9 +5819,9 @@ $$</div>
     <div class="cheat-card" data-cat="est">
         <div class="cheat-cat-badge">Inference &amp; CIs</div>
         <h4 class="cheat-title">Confidence Intervals for $\mu, \sigma^2, p$</h4>
-        <div class="cheat-formula">$$	ext{Mean (Small } n): ar{x} \pm t_{lpha/2, n-1}\left(rac{s}{\sqrt{n}}ight)$$</div>
-        <div class="cheat-formula">$$	ext{Variance: } \left[ rac{(n-1)s^2}{\chi^2_{lpha/2, n-1}}, rac{(n-1)s^2}{\chi^2_{1-lpha/2, n-1}} ight]$$</div>
-        <div class="cheat-formula">$$	ext{Sample Size: } n = \left(rac{Z_{lpha/2}\sigma}{E}ight)^2$$</div>
+        <div class="cheat-formula">$$\text{Mean (Small } n): \bar{x} \pm t_{\alpha/2, n-1}\left(\frac{s}{\sqrt{n}}\right)$$</div>
+        <div class="cheat-formula">$$\text{Variance: } \left[ \frac{(n-1)s^2}{\chi^2_{\alpha/2, n-1}}, \frac{(n-1)s^2}{\chi^2_{1-\alpha/2, n-1}} \right]$$</div>
+        <div class="cheat-formula">$$\text{Sample Size: } n = \left(\frac{Z_{\alpha/2}\sigma}{E}\right)^2$$</div>
         <div class="cheat-solved">
             <strong>Problems Solved:</strong> Small-sample prototype lifespan bounds; non-symmetric variance bounds; determining sample size for target error margin.
         </div>
@@ -5819,7 +5831,7 @@ $$</div>
     <div class="cheat-card" data-cat="hyp">
         <div class="cheat-cat-badge">Hypothesis Testing</div>
         <h4 class="cheat-title">One-Sample Tests &amp; Chi-Square Independence</h4>
-        <div class="cheat-formula">$$t = rac{ar{x} - \mu_0}{s/\sqrt{n}} \sim t(n-1), \quad \chi^2 = \sum rac{(O - E)^2}{E} \sim \chi^2((r-1)(c-1))$$</div>
+        <div class="cheat-formula">$$t = \frac{\bar{x} - \mu_0}{s/\sqrt{n}} \sim t(n-1), \quad \chi^2 = \sum \frac{(O - E)^2}{E} \sim \chi^2((r-1)(c-1))$$</div>
         <div class="cheat-solved">
             <strong>Problems Solved:</strong> Battery lifespan specification verification; distribution goodness-of-fit; testing independence between failure mode and manufacturing shift.
         </div>
@@ -5829,8 +5841,8 @@ $$</div>
     <div class="cheat-card" data-cat="anova">
         <div class="cheat-cat-badge">ANOVA</div>
         <h4 class="cheat-title">One-Way ANOVA &amp; Tukey's HSD Post-Hoc</h4>
-        <div class="cheat-formula">$$SST = SSB + SSW, \quad F = rac{MSB}{MSE} = rac{SSB/(k-1)}{SSW/(N-k)}$$</div>
-        <div class="cheat-formula">$$HSD = q_{lpha, k, N-k}\sqrt{rac{MSE}{n}}$$</div>
+        <div class="cheat-formula">$$SST = SSB + SSW, \quad F = \frac{MSB}{MSE} = \frac{SSB/(k-1)}{SSW/(N-k)}$$</div>
+        <div class="cheat-formula">$$HSD = q_{\alpha, k, N-k}\sqrt{\frac{MSE}{n}}$$</div>
         <div class="cheat-solved">
             <strong>Problems Solved:</strong> Comparing $k \ge 3$ material/process means simultaneously without Family-Wise Error inflation; pinpointing significantly differing pairs.
         </div>
@@ -5840,8 +5852,8 @@ $$</div>
     <div class="cheat-card" data-cat="reg">
         <div class="cheat-cat-badge">Linear Regression</div>
         <h4 class="cheat-title">OLS Regression, Intervals &amp; $R^2$</h4>
-        <div class="cheat-formula">$$\hat{eta}_1 = rac{S_{xy}}{S_{xx}}, \quad \hat{eta}_0 = ar{y} - \hat{eta}_1ar{x}, \quad R^2 = rac{SSR}{SST}$$</div>
-        <div class="cheat-formula">$$	ext{Pred. Interval: } \hat{y}_0 \pm t_{lpha/2, n-2} s_e \sqrt{1 + rac{1}{n} + rac{(X_0 - ar{x})^2}{S_{xx}}}$$</div>
+        <div class="cheat-formula">$$\hat{\beta}_1 = \frac{S_{xy}}{S_{xx}}, \quad \hat{\beta}_0 = \bar{y} - \hat{\beta}_1\bar{x}, \quad R^2 = \frac{SSR}{SST}$$</div>
+        <div class="cheat-formula">$$\text{Pred. Interval: } \hat{y}_0 \pm t_{\alpha/2, n-2} s_e \sqrt{1 + \frac{1}{n} + \frac{(X_0 - \bar{x})^2}{S_{xx}}}$$</div>
         <div class="cheat-solved">
             <strong>Problems Solved:</strong> Degradation rate prediction from temperature; goodness of fit via $R^2$; bounding individual future unit responses.
         </div>
@@ -5851,7 +5863,7 @@ $$</div>
     <div class="cheat-card" data-cat="ts">
         <div class="cheat-cat-badge">Time-Series &amp; AR(1)</div>
         <h4 class="cheat-title">Autoregression &amp; Remaining Useful Life (RUL)</h4>
-        <div class="cheat-formula">$$X_t = c + \phi_1 X_{t-1} + a_t, \quad \mu = rac{c}{1-\phi_1}, \quad 	ext{Var}(X_t) = rac{\sigma^2}{1-\phi_1^2}$$</div>
+        <div class="cheat-formula">$$X_t = c + \phi_1 X_{t-1} + a_t, \quad \mu = \frac{c}{1-\phi_1}, \quad \text{Var}(X_t) = \frac{\sigma^2}{1-\phi_1^2}$$</div>
         <div class="cheat-formula">$$\hat{X}_{T+h} = \mu + \phi_1^h(X_T - \mu)$$</div>
         <div class="cheat-solved">
             <strong>Problems Solved:</strong> Sensor vibration telemetry forecasting; stationarity check ($|\phi_1| &lt; 1$); Remaining Useful Life (RUL) estimation before alarm threshold.
@@ -5862,8 +5874,8 @@ $$</div>
     <div class="cheat-card" data-cat="logit">
         <div class="cheat-cat-badge">Logistic Regression</div>
         <h4 class="cheat-title">Logit Link, Odds Ratio &amp; Classification Metrics</h4>
-        <div class="cheat-formula">$$	ext{logit}(p) = \ln\left(rac{p}{1-p}ight) = oldsymbol{eta}^T\mathbf{x}, \quad p(\mathbf{x}) = rac{1}{1 + e^{-oldsymbol{eta}^T\mathbf{x}}}$$</div>
-        <div class="cheat-formula">$$	ext{Odds Ratio: } OR_j = e^{eta_j}, \quad F_1 = rac{2 \cdot 	ext{Precision} \cdot 	ext{Recall}}{	ext{Precision} + 	ext{Recall}}$$</div>
+        <div class="cheat-formula">$$\text{logit}(p) = \ln\left(\frac{p}{1-p}\right) = \boldsymbol{\beta}^T\mathbf{x}, \quad p(\mathbf{x}) = \frac{1}{1 + e^{-\boldsymbol{\beta}^T\mathbf{x}}}$$</div>
+        <div class="cheat-formula">$$\text{Odds Ratio: } OR_j = e^{\beta_j}, \quad F_1 = \frac{2 \cdot \text{Precision} \cdot \text{Recall}}{\text{Precision} + \text{Recall}}$$</div>
         <div class="cheat-solved">
             <strong>Problems Solved:</strong> Predicting binary breakdown probability from voltage/thermal stresses; odds multiplier interpretation; confusion matrix diagnostics.
         </div>
@@ -5873,11 +5885,11 @@ $$</div>
     <div class="cheat-card" data-cat="svm">
         <div class="cheat-cat-badge">Support Vector Machines</div>
         <h4 class="cheat-title">SVM Dual Optimization, Hyperplanes &amp; Kernels</h4>
-        <div class="cheat-formula">$$\max_{oldsymbol{lpha}} \sum lpha_i - rac{1}{2}\sum\sum lpha_i lpha_j y_i y_j K(\mathbf{x}_i, \mathbf{x}_j) \quad 	ext{s.t. } 0 \le lpha_i \le C, \; \sum lpha_i y_i = 0$$</div>
-        <div class="cheat-formula">$$\mathbf{w} = \sum_{i \in 	ext{SV}} lpha_i y_i \mathbf{x}_i, \quad b = y_k - \mathbf{w}^T\mathbf{x}_k, \quad 	ext{Margin } \gamma = rac{2}{\|\mathbf{w}\|}$$</div>
-        <div class="cheat-formula">$$	ext{Gaussian RBF: } K(\mathbf{x}, \mathbf{z}) = \exp\left(-\gamma \|\mathbf{x} - \mathbf{z}\|^2ight)$$</div>
+        <div class="cheat-formula">$$\max_{\boldsymbol{\alpha}} \sum \alpha_i - \frac{1}{2}\sum\sum \alpha_i \alpha_j y_i y_j K(\mathbf{x}_i, \mathbf{x}_j) \quad \text{s.t. } 0 \le \alpha_i \le C, \; \sum \alpha_i y_i = 0$$</div>
+        <div class="cheat-formula">$$\mathbf{w} = \sum_{i \in \text{SV}} \alpha_i y_i \mathbf{x}_i, \quad b = y_k - \mathbf{w}^T\mathbf{x}_k, \quad \text{Margin } \gamma = \frac{2}{\|\mathbf{w}\|}$$</div>
+        <div class="cheat-formula">$$\text{Gaussian RBF: } K(\mathbf{x}, \mathbf{z}) = \exp\left(-\gamma \|\mathbf{x} - \mathbf{z}\|^2\right)$$</div>
         <div class="cheat-solved">
-            <strong>Problems Solved:</strong> Finding optimal separating hyperplanes from 2D coordinate points; identifying Support Vectors ($lpha_i &gt; 0$); classifying non-linear failure clusters.
+            <strong>Problems Solved:</strong> Finding optimal separating hyperplanes from 2D coordinate points; identifying Support Vectors ($\alpha_i &gt; 0$); classifying non-linear failure clusters.
         </div>
     </div>
     

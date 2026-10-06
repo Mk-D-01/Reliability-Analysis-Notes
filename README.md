@@ -60,6 +60,8 @@ Simply open `index.html` in any web browser:
   # Open http://localhost:8000/index.html in your browser
   ```
 
+> **Offline:** MathJax and the fonts are bundled in `vendor/`, so no internet is needed. Keep `vendor/` next to `index.html` if you move or share it.
+
 ### 2. Read the Markdown Study Guide
 - Open `study_guide.md` in VS Code, Obsidian, GitHub, or any Markdown reader supporting LaTeX math.
 
