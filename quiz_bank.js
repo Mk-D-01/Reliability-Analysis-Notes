@@ -11,7 +11,7 @@ window.QUIZ_BANK = [
    "Random failure region"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Infant mortality region"
+  "e": "Failures concentrated right after delivery and caused by assembly/manufacturing defects are 'early life' failures: weak units fail quickly and the hazard rate falls as they are removed. After that, the roughly constant, random failures are the useful-life region; wear-out comes much later with a rising hazard."
  },
  {
   "m": 1,
@@ -24,7 +24,7 @@ window.QUIZ_BANK = [
    "Mean lifetime"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Reliability function"
+  "e": "$R(t)=P(T>t)$ is by definition the probability of surviving beyond $t$. The hazard $h(t)=f(t)/R(t)$ is the instantaneous failure rate given survival, $f(t)$ is the failure density, and the mean lifetime is a single number $\\int R(t)dt$, not a function of $t$."
  },
  {
   "m": 2,
@@ -37,7 +37,7 @@ window.QUIZ_BANK = [
    "0.950"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 0.855"
+  "e": "Independent events multiply: $P(A\\cap B)=P(A)P(B)=0.95\\times0.90=0.855$. Adding or taking the minimum would ignore that BOTH must work (a series arrangement)."
  },
  {
   "m": 1,
@@ -50,7 +50,7 @@ window.QUIZ_BANK = [
    "Scatter plot"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Histogram"
+  "e": "Grouped (class-interval) continuous data such as operating hours is shown with a histogram: adjacent bars over contiguous intervals, bar height = frequency. A bar graph is for separate categories, a pie chart for proportions of a whole, and a scatter plot needs two variables."
  },
  {
   "m": 1,
@@ -63,7 +63,7 @@ window.QUIZ_BANK = [
    "210"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: 200"
+  "e": "The total of five lives is $5\\times200=1000$. The four known lives sum to $180+190+210+220=800$, so the fifth is $1000-800=200$."
  },
  {
   "m": 1,
@@ -76,7 +76,7 @@ window.QUIZ_BANK = [
    "Median"
   ],
   "a": 3,
-  "e": "Matches the course assignment key: Median"
+  "e": "The median depends only on the middle rank, so moving an extreme value does not change it. The mean, range and variance all use the actual extreme values and are pulled by outliers."
  },
  {
   "m": 1,
@@ -89,7 +89,7 @@ window.QUIZ_BANK = [
    "8, 2.82"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 10, 3.16"
+  "e": "Mean $=570.5$. Squared deviations sum to 70, so the sample variance is $70/(8-1)=10$ and $s=\\sqrt{10}=3.16$. (Dividing by $n$ would give 8.75; the sample formula divides by $n-1$.)"
  },
  {
   "m": 2,
@@ -102,7 +102,7 @@ window.QUIZ_BANK = [
    "0.25"
   ],
   "a": 3,
-  "e": "Matches the course assignment key: 0.25"
+  "e": "Use inclusion–exclusion: $P(B\\cup F)=0.6+0.3-0.15=0.75$. 'Neither' is the complement: $1-0.75=0.25$. Subtracting only the overlap, or adding the probabilities, double counts."
  },
  {
   "m": 2,
@@ -115,7 +115,7 @@ window.QUIZ_BANK = [
    "0.0025"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 0.0375"
+  "e": "Law of total probability: $P(D)=\\sum P(M_i)P(D|M_i)=0.25(0.02)+0.50(0.05)+0.25(0.03)=0.005+0.025+0.0075=0.0375$. Each machine's defect rate is weighted by its share of output."
  },
  {
   "m": 3,
@@ -128,7 +128,7 @@ window.QUIZ_BANK = [
    "$\\frac{1}{12}$"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: $\\frac{1}{9}$"
+  "e": "A PMF must sum to 1: $k(2)+k(3)+k(4)=9k=1$, so $k=1/9$."
  },
  {
   "m": 3,
@@ -141,7 +141,7 @@ window.QUIZ_BANK = [
    "0.45"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 0.25"
+  "e": "Rejected means $X>2$, i.e. $X=3$ or $4$: $0.15+0.10=0.25$. 'More than 2' excludes $X=2$."
  },
  {
   "m": 3,
@@ -154,7 +154,7 @@ window.QUIZ_BANK = [
    "850"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: 750"
+  "e": "Acceptable means $X\\le2$: $0.30+0.25+0.20=0.75$. Expected number among 1000 packs $=1000\\times0.75=750$."
  },
  {
   "m": 3,
@@ -167,7 +167,7 @@ window.QUIZ_BANK = [
    "0.7176"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 0.8891"
+  "e": "$X\\sim\\text{Bin}(12,0.9)$, need $P(X\\ge10)=P(10)+P(11)+P(12)=0.2301+0.3766+0.2824=0.8891$. The option 0.1109 is the complement $P(X\\le9)$."
  },
  {
   "m": 3,
@@ -180,7 +180,7 @@ window.QUIZ_BANK = [
    "Hypergeometric Distribution"
   ],
   "a": 3,
-  "e": "Matches the course assignment key: Hypergeometric Distribution"
+  "e": "Sampling 10 from a finite lot of 500 WITHOUT replacement means trials are dependent and the defective fraction changes after each draw. That is the hypergeometric setting. Binomial needs independent trials with constant $p$ (sampling with replacement or an infinite lot)."
  },
  {
   "m": 3,
@@ -193,7 +193,7 @@ window.QUIZ_BANK = [
    "0.3056"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 0.1954"
+  "e": "Poisson with $\\lambda=4$: $P(X=3)=e^{-4}4^3/3!=0.0183\\times64/6=0.1954$."
  },
  {
   "m": 3,
@@ -206,7 +206,7 @@ window.QUIZ_BANK = [
    "0.0414"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 0.0124"
+  "e": "Negative binomial: the 3rd defect on trial 8 means exactly 2 defects in the first 7 trials, then a defect on trial 8: $\\binom72(0.1)^3(0.9)^5=21\\times0.001\\times0.59049=0.0124$."
  },
  {
   "m": 3,
@@ -219,7 +219,7 @@ window.QUIZ_BANK = [
    "0.9154"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 0.8421"
+  "e": "Hypergeometric with $N=40$, 6 defective, $n=5$. Accept if $X\\le1$: $\\dfrac{\\binom{34}{5}+\\binom61\\binom{34}{4}}{\\binom{40}{5}}\\approx0.846$, the closest listed option (0.8421, the course key; a small rounding difference). The key idea is summing $P(X=0)+P(X=1)$, because 'more than one' rejects."
  },
  {
   "m": 3,
@@ -232,7 +232,7 @@ window.QUIZ_BANK = [
    "0.4096"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 0.0819"
+  "e": "'Until the first failure on the 5th attempt' is geometric: 4 successes then a failure: $0.8^4\\times0.2=0.4096\\times0.2=0.0819$. The option 0.4096 forgets the final failure."
  },
  {
   "m": 3,
@@ -245,7 +245,7 @@ window.QUIZ_BANK = [
    "$\\mu=20,\\ \\sigma^2=1.38$"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: $\\mu=17,\\ \\sigma^2=2.55$"
+  "e": "$X\\sim\\text{Bin}(20,0.85)$: mean $np=17$, variance $np(1-p)=20(0.85)(0.15)=2.55$."
  },
  {
   "m": 4,
@@ -258,7 +258,7 @@ window.QUIZ_BANK = [
    "0.750"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 0.125"
+  "e": "First find $k$ from $\\int_0^1kx^2dx=k/3=1$, so $k=3$. Then $P(X<0.5)=\\int_0^{0.5}3x^2dx=0.5^3=0.125$. Forgetting to normalise gives wrong values."
  },
  {
   "m": 4,
@@ -271,7 +271,7 @@ window.QUIZ_BANK = [
    "3.50"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 2.67"
+  "e": "$E[X]=\\int_0^4x\\cdot\\frac x8dx=\\frac18\\cdot\\frac{4^3}{3}=\\frac{64}{24}=2.67$ hours."
  },
  {
   "m": 4,
@@ -284,7 +284,7 @@ window.QUIZ_BANK = [
    "0.8438"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 0.6875"
+  "e": "$P(1<X<3)=\\frac{3}{32}\\int_1^3(4x-x^2)dx=\\frac{3}{32}\\left[2x^2-\\frac{x^3}{3}\\right]_1^3=\\frac{3}{32}(9-1.667)=\\frac{3}{32}(7.333)=0.6875$."
  },
  {
   "m": 4,
@@ -297,7 +297,7 @@ window.QUIZ_BANK = [
    "Exponential Distribution"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Normal Distribution"
+  "e": "A bell-shaped quantity where values near the mean are common and extreme low/high days are rare is the Normal distribution. Exponential and Gamma are skewed and positive-only; Binomial counts successes."
  },
  {
   "m": 4,
@@ -310,7 +310,7 @@ window.QUIZ_BANK = [
    "50%"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 95.44%"
+  "e": "Empirical rule: within $\\mu\\pm1\\sigma$ is 68.26%, within $\\pm2\\sigma$ is 95.44% and within $\\pm3\\sigma$ is 99.73%."
  },
  {
   "m": 4,
@@ -323,7 +323,7 @@ window.QUIZ_BANK = [
    "15.87%"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 2.28%"
+  "e": "$z=(72-80)/4=-2$, and $P(Z<-2)=0.0228$, so about 2.28% fall below 72 MPa. The 15.87% option is the $-1\\sigma$ tail."
  },
  {
   "m": 4,
@@ -336,7 +336,7 @@ window.QUIZ_BANK = [
    "600.0"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 565.8"
+  "e": "Need the 95th percentile: $x=\\mu+z_{0.95}\\sigma=500+1.645\\times40=565.8$. Using $z=1.28$ (90th percentile) would give the wrong target."
  },
  {
   "m": 4,
@@ -349,7 +349,7 @@ window.QUIZ_BANK = [
    "0.5488"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 0.2019"
+  "e": "Mean $1/\\lambda=5$ min, so $P(T>8)=e^{-8/5}=e^{-1.6}=0.2019$."
  },
  {
   "m": 4,
@@ -362,7 +362,7 @@ window.QUIZ_BANK = [
    "80 h"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 50 h"
+  "e": "$P(T>20)=e^{-20/\\theta}=0.6703\\Rightarrow20/\\theta=-\\ln0.6703=0.4\\Rightarrow\\theta=50$ h. The mean of an exponential is $1/\\lambda=\\theta$."
  },
  {
   "m": 4,
@@ -375,7 +375,7 @@ window.QUIZ_BANK = [
    "60.18"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: 45.36"
+  "e": "Gamma with shape $\\alpha$ and scale $\\beta$ has variance $\\alpha\\beta^2=5\\times9=45$, so 45.36 is the matching option (the mean would be $\\alpha\\beta=15$). Do not confuse scale and rate parametrisations."
  },
  {
   "m": 5,
@@ -388,7 +388,7 @@ window.QUIZ_BANK = [
    "36"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 64"
+  "e": "$SE=\\sigma/\\sqrt n$: $3=24/\\sqrt n\\Rightarrow\\sqrt n=8\\Rightarrow n=64$."
  },
  {
   "m": 5,
@@ -401,7 +401,7 @@ window.QUIZ_BANK = [
    "0.6826"
   ],
   "a": 3,
-  "e": "Matches the course assignment key: 0.6826"
+  "e": "$SE=60/\\sqrt{144}=5$, so $345$ to $355$ is $\\mu\\pm1SE$ and the probability is 0.6826."
  },
  {
   "m": 5,
@@ -414,7 +414,7 @@ window.QUIZ_BANK = [
    "0.6915"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 0.1151"
+  "e": "The difference of means is normal with mean $80-75=5$ and $SE=\\sqrt{18^2/81+12^2/64}=\\sqrt{4+2.25}=2.5$. $P(D>8)=P(Z>(8-5)/2.5=1.2)=0.1151$."
  },
  {
   "m": 5,
@@ -427,7 +427,7 @@ window.QUIZ_BANK = [
    "2"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 1/2"
+  "e": "$SE\\propto1/\\sqrt n$. Going from 25 to 100 multiplies $\\sqrt n$ by 2, so the standard error becomes $1/2$ of before (not 1/4, which would need $n=400$)."
  },
  {
   "m": 5,
@@ -440,7 +440,7 @@ window.QUIZ_BANK = [
    "Its distribution cannot be determined without knowing the exact population distribution."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: It will be approximately Normally distributed."
+  "e": "By the CLT, with $n=400$ (large) the sample mean is approximately Normal with mean 50 and $SE=10/20=0.5$, even though the population is right-skewed. You do not need to know the exact population distribution."
  },
  {
   "m": 5,
@@ -453,7 +453,7 @@ window.QUIZ_BANK = [
    "3.00"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 1.94"
+  "e": "Population $\\sigma$ unknown so use the $t$ statistic: $t=(\\bar x-\\mu_0)/(s/\\sqrt n)=(53-50)/(6/\\sqrt{15})=3/1.549=1.94$."
  },
  {
   "m": 5,
@@ -466,7 +466,7 @@ window.QUIZ_BANK = [
    "For populations with larger variances, the sample mean is a reliable estimate of the population mean."
   ],
   "a": 3,
-  "e": "Matches the course assignment key: For populations with larger variances, the sample mean is a reliable estimate of the population mean."
+  "e": "The false statement is the last one: a larger population variance makes $\\sigma^2/n$ larger, so the sample mean is LESS reliable at a given $n$. The other three are true results of the CLT/sampling theory."
  },
  {
   "m": 5,
@@ -479,7 +479,7 @@ window.QUIZ_BANK = [
    "None of the above"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: t-test"
+  "e": "With $n=12$ and $\\sigma$ unknown (estimated by $s$) from a roughly normal population, the standardised mean follows a $t$ distribution with 11 d.f. $Z$ needs known $\\sigma$ or large $n$; $F$ compares variances."
  },
  {
   "m": 5,
@@ -492,7 +492,7 @@ window.QUIZ_BANK = [
    "Estimating a population proportion"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Comparing the variability of measurements obtained from two instruments"
+  "e": "The $F$ distribution is a ratio of two independent scaled chi-squares, which is exactly the ratio of two sample variances. So comparing variability of two instruments uses $F$; comparing means uses $t$/$z$, and proportions use $z$."
  },
  {
   "m": 5,
@@ -505,7 +505,7 @@ window.QUIZ_BANK = [
    "3.75"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 1.78"
+  "e": "$F=s_1^2/s_2^2=64/36=1.78$ with $(15,24)$ d.f. (larger variance in the numerator)."
  },
  {
   "m": 7,
@@ -518,7 +518,7 @@ window.QUIZ_BANK = [
    "They should be formulated after the sample data are collected."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: They should be mutually exclusive and collectively exhaustive."
+  "e": "A valid test partitions the parameter space: $H_0$ and $H_a$ must not overlap (mutually exclusive) and together cover all possibilities (exhaustive). They are set BEFORE seeing data, and only $H_0$ carries the equality."
  },
  {
   "m": 7,
@@ -531,7 +531,7 @@ window.QUIZ_BANK = [
    "Testing whether the average downtime is less than 3 hours."
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Testing whether a manufacturing process changes the average diameter of shafts."
+  "e": "A two-tailed test is needed when the alternative is 'different from' (change in either direction), as for shaft diameter changing. 'Greater than', 'increases' and 'less than' are one-directional (one-tailed)."
  },
  {
   "m": 7,
@@ -544,7 +544,7 @@ window.QUIZ_BANK = [
    "It measures sampling error only."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Smaller p-values provide stronger evidence against the null hypothesis."
+  "e": "The p-value is $P(\\text{data this extreme}\\mid H_0)$. It is not the probability that $H_0$ is true; smaller p means the observed data would be rarer under $H_0$, so stronger evidence against it."
  },
  {
   "m": 7,
@@ -557,7 +557,7 @@ window.QUIZ_BANK = [
    "Sampling error"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: Type I Error"
+  "e": "Declaring the component unsafe when it is actually fine means rejecting a true null ('component is acceptable'). That is a Type I error (false alarm), with probability $\\alpha$."
  },
  {
   "m": 7,
@@ -570,7 +570,7 @@ window.QUIZ_BANK = [
    "Probability of failing to reject a true null hypothesis"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Probability of correctly rejecting a false null hypothesis"
+  "e": "Power $=1-\\beta=P(\\text{reject }H_0\\mid H_0\\text{ false})$: the chance of correctly detecting a real effect. 'Reject a true null' is $\\alpha$; 'fail to reject a false null' is $\\beta$."
  },
  {
   "m": 7,
@@ -583,7 +583,7 @@ window.QUIZ_BANK = [
    "$H_0$: $\\mu \\neq 4000$ and $H_a$: $\\mu = 4000$"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: $H_0$: $\\mu = 4000$ and $H_a$: $\\mu \\neq 4000$"
+  "e": "The engineer suspects a difference in EITHER direction, so $H_a:\\mu\\ne4000$ with $H_0:\\mu=4000$ (equality always sits in $H_0$)."
  },
  {
   "m": 7,
@@ -596,7 +596,7 @@ window.QUIZ_BANK = [
    "Reject the null hypothesis because the sample mean is greater than the claimed average lifetime."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Reject the null hypothesis and conclude that there is sufficient statistical evidence that the average operating lifetime is less than 2000 hours."
+  "e": "Left-tailed $z$-test: $z=(1940-2000)/(120/\\sqrt{36})=-60/20=-3$. This is below $-1.645$ (5% critical value), so reject $H_0$: evidence the mean life is below 2000 h."
  },
  {
   "m": 7,
@@ -609,7 +609,7 @@ window.QUIZ_BANK = [
    "The manufacturer's claim is correct because the sample average is close to 500 N."
   ],
   "a": 0,
-  "e": "Matches the course assignment key: There is sufficient statistical evidence to conclude that the average breaking strength of the components is less than 500 N."
+  "e": "Left-tailed $t$-test: $t=(494-500)/(8/\\sqrt{12})=-2.60$. The critical value $t_{0.05,11}=-1.796$, so $-2.60$ is in the rejection region: reject $H_0$."
  },
  {
   "m": 7,
@@ -622,7 +622,7 @@ window.QUIZ_BANK = [
    "There is insufficient information to perform an F-test."
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Reject the null hypothesis and conclude that the process variances are significantly different."
+  "e": "$F=16/4=4$ with $(10,12)$ d.f. For a two-sided test at 10%, the critical value is $F_{0.05,10,12}\\approx2.75$. Since $4>2.75$, reject $H_0$: the variances differ. The test compares variances, not means, and sample sizes are irrelevant to the decision rule."
  },
  {
   "m": 6,
@@ -635,7 +635,7 @@ window.QUIZ_BANK = [
    "Both plants will have confidence intervals of equal width because the sample sizes are the same."
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Plant A will have a narrower confidence interval because lower variability results in a smaller standard error."
+  "e": "The margin of error is $t\\cdot s/\\sqrt n$. Same $n$ and confidence level means the multiplier is equal, so the smaller $s$ (Plant A) gives the smaller standard error and the narrower interval."
  },
  {
   "m": 6,
@@ -648,7 +648,7 @@ window.QUIZ_BANK = [
    "A wider confidence interval always indicates a more precise estimate of the population parameter."
   ],
   "a": 3,
-  "e": "Matches the course assignment key: A wider confidence interval always indicates a more precise estimate of the population parameter."
+  "e": "The incorrect statement is the last one: a wider interval means LESS precision (more uncertainty). Larger $n$ narrows it and higher confidence widens it."
  },
  {
   "m": 6,
@@ -661,7 +661,7 @@ window.QUIZ_BANK = [
    "0.9 mm"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 1.4 mm"
+  "e": "$ME\\propto1/\\sqrt n$, so $ME_B=2.1\\sqrt{36/81}=2.1\\times\\frac69=1.4$ mm."
  },
  {
   "m": 6,
@@ -674,7 +674,7 @@ window.QUIZ_BANK = [
    "(19,700 km, 20,300 km)"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: (19,356 km, 20,644 km)"
+  "e": "With $n=100$ use $\\bar x\\pm z_{0.995}s/\\sqrt n=20000\\pm2.576\\times250=20000\\pm644$, i.e. $(19356,20644)$."
  },
  {
   "m": 6,
@@ -687,7 +687,7 @@ window.QUIZ_BANK = [
    "(9.10 mm, 10.90 mm)"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: (9.01 mm, 10.99 mm)"
+  "e": "Small sample, $\\sigma$ unknown, so use $t_{7,0.995}=3.499$: $10\\pm3.499\\times0.8/\\sqrt8=10\\pm0.99$, i.e. $(9.01,10.99)$. A $z$ value of 2.576 would give a too-narrow interval."
  },
  {
   "m": 7,
@@ -700,7 +700,7 @@ window.QUIZ_BANK = [
    "0.9871"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: 0.0136"
+  "e": "$\\hat p=200/250=0.8$. $z=\\dfrac{0.8-0.85}{\\sqrt{0.85\\times0.15/250}}=\\dfrac{-0.05}{0.0226}=-2.21$. Left-tail p-value $\\approx0.0134$ (listed 0.0136). It is small, so there is evidence the true proportion is below 0.85."
  },
  {
   "m": 7,
@@ -713,7 +713,7 @@ window.QUIZ_BANK = [
    "None of the above"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Paired t-test"
+  "e": "Before/after measurements on the SAME devices are paired, so analyse the 25 differences with a paired $t$-test. A pooled $t$-test assumes independent samples."
  },
  {
   "m": 7,
@@ -726,7 +726,7 @@ window.QUIZ_BANK = [
    "2.08"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 2.45"
+  "e": "Pooled variance: $s_p^2=\\dfrac{19(40^2)+17(35^2)}{36}=1413.9$, $s_p=37.6$. $t=\\dfrac{620-590}{37.6\\sqrt{1/20+1/18}}=\\dfrac{30}{12.26}=2.45$."
  },
  {
   "m": 6,
@@ -739,7 +739,7 @@ window.QUIZ_BANK = [
    "(0.49 mm, 1.90 mm)"
   ],
   "a": 3,
-  "e": "Matches the course assignment key: (0.49 mm, 1.90 mm)"
+  "e": "Known $\\sigma$ so use $z$: difference $=50.8-49.6=1.2$; $SE=\\sqrt{2.4^2/64+2^2/100}=\\sqrt{0.09+0.04}=0.361$; margin $=1.96\\times0.361=0.71$. The CI is about $(0.49,1.91)$."
  },
  {
   "m": 6,
@@ -752,7 +752,7 @@ window.QUIZ_BANK = [
    "(0.74, 0.96)"
   ],
   "a": 3,
-  "e": "Matches the course assignment key: (0.74, 0.96)"
+  "e": "$\\hat p=34/40=0.85$. $\\hat p\\pm1.96\\sqrt{0.85\\times0.15/40}=0.85\\pm0.11$, i.e. $(0.74,0.96)$. The other options are centred far from 0.85."
  },
  {
   "m": 8,
@@ -765,7 +765,7 @@ window.QUIZ_BANK = [
    "At least one material type has a significantly different distribution of cycles to failure."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: The mean number of cycles to failure is the same for Material A, Material B, Material C, and Material D"
+  "e": "One-way ANOVA tests $H_0:\\mu_A=\\mu_B=\\mu_C=\\mu_D$ (equal means). It is not about equal variances (an assumption) and the alternative is that at least one mean differs."
  },
  {
   "m": 8,
@@ -778,7 +778,7 @@ window.QUIZ_BANK = [
    "The response variable (corrosion depth) is approximately normally distributed within each coating group."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: The response variable (corrosion depth) has unequal variances across the three coating groups."
+  "e": "Equal variances (homogeneity) is an ASSUMPTION of one-way ANOVA, so 'unequal variances' is the statement that is NOT an assumption. The others (independence, normality, equal variance) are assumed."
  },
  {
   "m": 8,
@@ -791,7 +791,7 @@ window.QUIZ_BANK = [
    "$MSE = SSE \\times (N-a)$"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: $MSE = \\frac{SSE}{N-a}$"
+  "e": "$MSE=SSE/df_{error}$ and $df_{error}=N-a$ (each of the $a$ groups loses one d.f. to its own mean). Mean squares are sums of squares DIVIDED by d.f., never multiplied."
  },
  {
   "m": 8,
@@ -804,7 +804,7 @@ window.QUIZ_BANK = [
    "3 and 18"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 2 and 18"
+  "e": "Between-groups d.f. $=k-1=2$ for 3 groups; within-groups d.f. $=N-k=21-3=18$. The total d.f. $N-1=20$ equals $2+18$."
  },
  {
   "m": 8,
@@ -817,7 +817,7 @@ window.QUIZ_BANK = [
    "690"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 150"
+  "e": "SSW is the sum of squared deviations of each observation from its own group mean (random scatter inside groups); the key value is 150. The data table was not captured in the screenshot, so the working is not reproduced here: remember $SSW=SST-SSB$."
  },
  {
   "m": 8,
@@ -830,7 +830,7 @@ window.QUIZ_BANK = [
    "$SS_{Treatments} \\times (a-1) = \\sigma^2$"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: $\\frac{SS_{Treatment}}{a-1} = \\sigma^2$"
+  "e": "Under $H_0$ the treatment mean square is an unbiased estimate of the common variance: $E[SS_{Treatment}/(a-1)]=\\sigma^2$. It is divided by $a-1$, the treatment degrees of freedom."
  },
  {
   "m": 8,
@@ -843,7 +843,7 @@ window.QUIZ_BANK = [
    "0.35"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 0.60"
+  "e": "Proportion explained $=SS_{Treatment}/SS_{Total}=720/1200=0.60$ (this is $\\eta^2$, the ANOVA analogue of $R^2$)."
  },
  {
   "m": 8,
@@ -856,7 +856,7 @@ window.QUIZ_BANK = [
    "Paired t-Test"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Analysis of Variance (ANOVA)"
+  "e": "Comparing mean scores of THREE independent groups on a continuous response is the textbook case for one-way ANOVA. Paired $t$ is for matched pairs, chi-square for categorical counts, correlation for association between two variables."
  },
  {
   "m": 8,
@@ -869,7 +869,7 @@ window.QUIZ_BANK = [
    "The number of groups does not affect the overall Type I error probability of multiple t-tests."
   ],
   "a": 0,
-  "e": "Matches the course assignment key: Multiple pairwise t-tests have a higher overall probability of making a Type I error than a single ANOVA."
+  "e": "Each test at $\\alpha=0.05$ adds Type I error risk. For five groups there are 10 pairs, so family-wise error $\\approx1-0.95^{10}=0.40$, much higher than the single ANOVA's 0.05."
  },
  {
   "m": 8,
@@ -882,7 +882,7 @@ window.QUIZ_BANK = [
    "MST = 200, MSE = 30, F = 6.67"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: MST = 300, MSE = 17.14, F = 17.5"
+  "e": "$a=3$, $n=8$, $N=24$. $MST=600/(3-1)=300$, $MSE=360/(24-3)=17.14$, $F=300/17.14=17.5$."
  },
  {
   "m": 9,
@@ -895,7 +895,7 @@ window.QUIZ_BANK = [
    "Linear Regression"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Spearman Rank Correlation"
+  "e": "Ordinal ranks with ties and non-continuous data call for a rank-based measure: Spearman's $\\rho$ (monotonic association). Pearson needs continuous, linear relationships."
  },
  {
   "m": 9,
@@ -908,7 +908,7 @@ window.QUIZ_BANK = [
    "990"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: 10"
+  "e": "$\\rho=1-\\dfrac{6\\sum d^2}{n(n^2-1)}$: $0.7=1-\\dfrac{297}{n(n^2-1)}\\Rightarrow n(n^2-1)=990\\Rightarrow n=10$."
  },
  {
   "m": 9,
@@ -921,7 +921,7 @@ window.QUIZ_BANK = [
    "The correlation is not significant because $r < 0.60$."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: The computed t-value is approximately 3.76, and the correlation is significant at the 5% level."
+  "e": "$t=r\\sqrt{n-2}/\\sqrt{1-r^2}=0.58\\sqrt{28}/\\sqrt{0.6636}=3.77$ with 28 d.f. The critical value is about 2.048, so the correlation is significant at 5%. The d.f. is $n-2$, not $n$."
  },
  {
   "m": 9,
@@ -934,7 +934,7 @@ window.QUIZ_BANK = [
    "None of the plots depicts 'no correlation'"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Case 3 (Plot in the right)"
+  "e": "No correlation is shown by a flat (zero-slope) fitted line, where $Y$ does not change with $X$. Positive and negative slopes indicate positive and negative correlation."
  },
  {
   "m": 9,
@@ -947,7 +947,7 @@ window.QUIZ_BANK = [
    "-0.8045"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: 0.8045"
+  "e": "$r=\\dfrac{S_{xy}}{\\sqrt{S_{xx}S_{yy}}}=\\dfrac{466}{\\sqrt{234\\times1434}}=\\dfrac{466}{579.3}=0.8045$. The sign follows $S_{xy}$ (positive)."
  },
  {
   "m": 9,
@@ -960,7 +960,7 @@ window.QUIZ_BANK = [
    "Cramer's V Correlation"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Pearson Correlation Analysis"
+  "e": "Two continuous variables, and the aim is the STRENGTH of their linear association, so use Pearson correlation. Regression predicts one variable from another; chi-square and Cramér's V are for categorical data."
  },
  {
   "m": 11,
@@ -973,7 +973,7 @@ window.QUIZ_BANK = [
    "It assumes that the equipment lifetime follows an Exponential distribution."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: It estimates the probability that equipment belongs to one of several failure-risk categories."
+  "e": "Multinomial logistic regression generalises binary logistic regression to more than two unordered classes (Low/Medium/High risk), giving a probability for each class. It does not predict a continuous RUL."
  },
  {
   "m": 9,
@@ -986,7 +986,7 @@ window.QUIZ_BANK = [
    "0.94"
   ],
   "a": 3,
-  "e": "Matches the course assignment key: 0.94"
+  "e": "$d_i=\\pm1$ for all 10 pumps, so $\\sum d^2=10$. $\\rho=1-\\dfrac{6(10)}{10(99)}=0.94$."
  },
  {
   "m": 8,
@@ -999,7 +999,7 @@ window.QUIZ_BANK = [
    "There is a variation in the mean weight as the null hypothesis cannot be rejected."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: There is no variation in the mean weight as the null hypothesis cannot be rejected."
+  "e": "$SSB=73.4$, $SSW=155$, $F=(73.4/2)/(155/15)=3.55$. The critical value $F_{0.05,2,15}=3.68$, so $F<F_{crit}$: do NOT reject $H_0$ (no evidence the mean weights differ). Failing to reject is not proof that the means are identical."
  },
  {
   "m": 9,
@@ -1012,7 +1012,7 @@ window.QUIZ_BANK = [
    "Predictor must be binary."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Error terms have zero mean conditioned on the predictor."
+  "e": "OLS is unbiased when $E[\\varepsilon|X]=0$ (errors have zero mean given the predictor). Normality of $X$ or of $T$ is not required; normal errors are only needed for exact small-sample inference."
  },
  {
   "m": 9,
@@ -1025,7 +1025,7 @@ window.QUIZ_BANK = [
    "The regression coefficients are unbiased."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 96% of the variation in degradation is explained by the model."
+  "e": "$R^2=1-SSE/SST$ is the fraction of variation in the response explained by the model. It does not mean 96% classification accuracy and says nothing about coefficient bias."
  },
  {
   "m": 9,
@@ -1038,7 +1038,7 @@ window.QUIZ_BANK = [
    "All regression coefficients become statistically insignificant."
   ],
   "a": 0,
-  "e": "Matches the course assignment key: The Sum of Squared Errors (SSE) cannot increase."
+  "e": "Adding a predictor can't increase SSE (least squares can set its coefficient to 0), so $R^2$ cannot decrease. But that does not mean the model predicts better on new data (overfitting), and the other coefficients are not necessarily affected."
  },
  {
   "m": 9,
@@ -1051,7 +1051,7 @@ window.QUIZ_BANK = [
    "15.6X - 312.65"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: 0.7651X + 14.3956"
+  "e": "$b=S_{xy}/S_{xx}=0.7651$ and $a=\\bar y-b\\bar x=14.40$, so $\\hat y=14.40+0.7651x$. Slopes like 12.8 are impossible for scores on a 0–100 scale."
  },
  {
   "m": 9,
@@ -1064,7 +1064,7 @@ window.QUIZ_BANK = [
    "P-2, Q-4, R-3, S-1"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: P-3, Q-4, R-2, S-1"
+  "e": "Point-biserial: one continuous + one binary variable. Pearson: linear, two continuous. Cramér's V: two categorical variables. Spearman: monotonic relation between ranks."
  },
  {
   "m": 11,
@@ -1077,7 +1077,7 @@ window.QUIZ_BANK = [
    "$z = -0.7$, $P(Y=1|X) \\approx 0.668$, therefore Class 1"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: $z = -0.3$, $P(Y=1|X) \\approx 0.426$, therefore Class 0"
+  "e": "$z=-2+0.8(4)-0.5(3)=-0.3$. $p=1/(1+e^{0.3})=0.426<0.5$, so predict Class 0."
  },
  {
   "m": 9,
@@ -1090,7 +1090,7 @@ window.QUIZ_BANK = [
    "$b = \\frac{\\sum(x_i-\\bar{x})}{\\sum(y_i-\\bar{y})^2}$"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: $b = \\frac{\\sum(x_i-\\bar{x})(y_i-\\bar{y})}{\\sum(x_i-\\bar{x})^2}$"
+  "e": "Least squares minimises squared errors and gives $b=\\dfrac{S_{xy}}{S_{xx}}$, covariance of $X,Y$ divided by variance of $X$. Dividing by $S_{yy}$ would be a different quantity."
  },
  {
   "m": 11,
@@ -1103,7 +1103,7 @@ window.QUIZ_BANK = [
    "The logit decreases by 0.8 for every unit increase in stress."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Each unit increase in stress multiplies the odds of failure by $e^{0.8}$."
+  "e": "The model is linear in the log-odds, so each unit of $x$ adds 0.8 to the log-odds, which multiplies the odds by $e^{0.8}$. It does not change the probability by a fixed amount because the sigmoid is non-linear."
  },
  {
   "m": 11,
@@ -1116,7 +1116,7 @@ window.QUIZ_BANK = [
    "Logistic regression assumes the response variable follows a normal distribution."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Logistic regression estimates event probabilities between 0 and 1 using Maximum Likelihood Estimation."
+  "e": "A binary outcome needs predictions in $[0,1]$. Logistic regression models $P(Y=1)$ via the sigmoid and is fitted by maximum likelihood. Linear regression can predict outside [0,1] and assumes normal, constant-variance errors."
  },
  {
   "m": 10,
@@ -1129,7 +1129,7 @@ window.QUIZ_BANK = [
    "Yule-Walker equations can only be used when server workload remains constant over time."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: AR models account for the autocorrelation between current and past server-workload values, whereas regression against hour number does not explicitly model this serial dependence."
+  "e": "Workload at hour $t$ depends on recent past hours (autocorrelation). AR($p$) models that serial dependence directly; regression on hour number only captures a trend and ignores it. Yule–Walker equations estimate AR coefficients from the autocorrelations."
  },
  {
   "m": 11,
@@ -1142,7 +1142,7 @@ window.QUIZ_BANK = [
    "Coefficient of Determination ($R^2$)"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Log-likelihood"
+  "e": "Logistic regression is fitted by maximum likelihood, so the objective maximised is the log-likelihood. Sum of squared residuals and $R^2$ belong to least squares."
  },
  {
   "m": 11,
@@ -1155,7 +1155,7 @@ window.QUIZ_BANK = [
    "Log-likelihood always remains constant."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Estimated coefficients corresponding to those variables are close to zero."
+  "e": "If $\\hat p$ barely changes when a variable changes, the effect $\\beta x$ is tiny, so the coefficient is close to 0. The sigmoid is never linear and the log-likelihood changes with the data."
  },
  {
   "m": 11,
@@ -1168,7 +1168,7 @@ window.QUIZ_BANK = [
    "$f'(x)=1+f(x)/(1-f(x))$"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: $f'(x)=f(x)(1-f(x))$"
+  "e": "$f'(x)=\\dfrac{e^{-x}}{(1+e^{-x})^2}=f(x)\\cdot\\dfrac{e^{-x}}{1+e^{-x}}=f(x)(1-f(x))$."
  },
  {
   "m": 11,
@@ -1181,7 +1181,7 @@ window.QUIZ_BANK = [
    "Only the odds change, while the probabilities remain unchanged."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: The predicted probabilities become incorrect because the regression coefficients correspond to the original measurement scale."
+  "e": "The coefficient was fitted for the original unit. Changing the unit of the input without refitting changes the value fed into $\\beta x$, so predictions are no longer consistent. (A unit change should be accompanied by rescaling $\\beta$.)"
  },
  {
   "m": 12,
@@ -1194,7 +1194,7 @@ window.QUIZ_BANK = [
    "When a model is too simple to capture the underlying patterns"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: When a model performs well on the training data but poorly on new data"
+  "e": "Overfitting = the model memorises noise in training data: very low training error but poor generalisation to unseen data. Underfitting is 'too simple'."
  },
  {
   "m": 12,
@@ -1207,7 +1207,7 @@ window.QUIZ_BANK = [
    "$\\frac{1}{7}$"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: $\\frac{2}{7}$"
+  "e": "$P(H|F)$: of the 7 failure cycles (2,3,5,6,7,9,10), 2 have High temperature (cycles 2 and 7), so $2/7$."
  },
  {
   "m": 11,
@@ -1220,7 +1220,7 @@ window.QUIZ_BANK = [
    "Vibration has no effect unless the predicted probability exceeds 0.5."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: A one-unit increase in vibration multiplies the odds of failure by $\\exp(0.75)$, assuming other variables remain constant."
+  "e": "In logistic regression $e^{\\beta}$ is the odds ratio for a one-unit increase with the other variables fixed, so $e^{0.75}\\approx2.12$ times the odds. It is not a fixed change in probability."
  },
  {
   "m": 9,
@@ -1233,7 +1233,7 @@ window.QUIZ_BANK = [
    "$\\beta_0=0.50, \\beta_1=1.67$"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: $\\beta_0=0.33, \\beta_1=1.50$"
+  "e": "$\\bar x=2$, $\\bar y=10/3$, $S_{xy}=3$, $S_{xx}=2$, so $\\beta_1=1.5$ and $\\beta_0=3.33-1.5\\times2=0.33$."
  },
  {
   "m": 11,
@@ -1246,7 +1246,7 @@ window.QUIZ_BANK = [
    "None of the above"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Logistic Regression"
+  "e": "The response (pass/fail) is binary and the predictor (hours) is continuous, so logistic regression is the standard tool. Linear regression is unsuitable for a 0/1 response."
  },
  {
   "m": 11,
@@ -1259,7 +1259,7 @@ window.QUIZ_BANK = [
    "Operating temperature has no effect on the probability of failure."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Every 1°C increase increases the log-odds of bearing failure by 0.12."
+  "e": "In logit form each 1°C adds 0.12 to the log-odds (multiplies the odds by $e^{0.12}\\approx1.13$). The effect on probability depends on the starting level, so it is not exactly 12% or a factor of 0.12."
  },
  {
   "m": 12,
@@ -1272,7 +1272,7 @@ window.QUIZ_BANK = [
    "The prior probabilities of Operational and Failed must be exactly equal."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: The attributes are conditionally independent of one another, given the class label."
+  "e": "Naive Bayes assumes that attributes are conditionally independent given the class, so $P(x_1,x_2,x_3|C)=\\prod P(x_i|C)$. It does not need equal priors or numeric features."
  },
  {
   "m": 12,
@@ -1285,7 +1285,7 @@ window.QUIZ_BANK = [
    "The classifier cannot make a prediction since the test instance does not exactly match any training record."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Failed, because the class-conditional probability computed for Operational collapses to zero, while Failed remains non-zero."
+  "e": "Operational records (2,3,4,7,8,10) never have Vibration = High, so $P(\\text{High}|O)=0$ and the whole Operational product is 0. For Failed (records 1,5,6,9): $P(F)=0.4$, $P(\\text{Weekday}|F)=3/4$, $P(\\text{Heavy}|F)=3/4$, $P(\\text{High}|F)=1$, giving $0.4\\times0.75\\times0.75\\times1=0.225>0$. Failed is predicted; this is the zero-frequency problem."
  },
  {
   "m": 12,
@@ -1298,7 +1298,7 @@ window.QUIZ_BANK = [
    "Assuming equal prior probabilities for all classes, regardless of the class distribution in the data."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: The m-estimate (Laplace / additive smoothing) of probability, which adds a small correction so that no class-conditional probability is ever exactly zero."
+  "e": "A single zero conditional probability wipes out the whole product. Laplace/m-estimate smoothing adds a pseudo-count so no probability is exactly zero. Collecting some more data or dropping the attribute does not fix the estimator."
  },
  {
   "m": 12,
@@ -1311,7 +1311,7 @@ window.QUIZ_BANK = [
    "It builds a fixed mathematical equation relating sensor features to the class label during training, similar to logistic regression."
   ],
   "a": 0,
-  "e": "Matches the course assignment key: It defers all computation until a test sample is presented, without building any explicit model or mathematical relationship during the training phase."
+  "e": "kNN keeps the training data and does all work (distance calculations) at prediction time; no model is built in training. That is what 'lazy' means. It needs to store all the data, so memory is NOT small."
  },
  {
   "m": 12,
@@ -1324,7 +1324,7 @@ window.QUIZ_BANK = [
    "Faulty, Faulty, Healthy"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: Healthy, Healthy, Faulty"
+  "e": "Distances from $T(3,3)$ (squared): A=5, B=7.25, D=8, E=9.25, F=10, C=13. $k=1$: A (Healthy). $k=3$: A,B,D: 2 Healthy, 1 Faulty, so Healthy. $k=5$: A,B,D,E,F: 2 Healthy, 3 Faulty, so Faulty."
  },
  {
   "m": 12,
@@ -1337,7 +1337,7 @@ window.QUIZ_BANK = [
    "K = 1 → Y; K = 5 → X"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: K = 1 → Y; K = 5 → Y"
+  "e": "Squared distances from $Q(5,4)$: S4=1, S5=1, S6=2, S3=4, S7=8. $K=1$ ties between S4 and S5, both Y. $K=5$: S4(Y), S5(Y), S6(X), S3(Y), S7(X) gives 3 Y vs 2 X, so Y."
  },
  {
   "m": 12,
@@ -1350,7 +1350,7 @@ window.QUIZ_BANK = [
    "k-NN with k=1, since distance-based classifiers never require the classes to be linearly separable."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Non-linear SVM, using an appropriate kernel function to implicitly map the data into a higher-dimensional space where it becomes linearly separable."
+  "e": "When classes are not linearly separable in the input space, a kernel SVM (RBF/polynomial) implicitly maps data to a higher-dimensional space where a linear separator exists, without computing the mapping explicitly. SVM does handle non-separable data."
  },
  {
   "m": 12,
@@ -1363,7 +1363,7 @@ window.QUIZ_BANK = [
    "The MMH minimizes the total number of support vectors required for classification."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: The MMH maximizes the distance to the nearest training points of each class, which improves the classifier's generalization performance on unseen test data."
+  "e": "Among all separating hyperplanes, the maximum-margin one stays as far as possible from both classes, so small perturbations in test data are less likely to be misclassified. This is the margin-based generalisation argument."
  },
  {
   "m": 12,
@@ -1376,7 +1376,7 @@ window.QUIZ_BANK = [
    "A quadratic objective function with quadratic constraints, solved using dynamic programming."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: A quadratic objective function with linear constraints, solved using the Lagrange multiplier method."
+  "e": "The SVM primal is to minimise $\\frac12\\|w\\|^2$ (quadratic) subject to linear constraints $y_i(w^Tx_i+b)\\ge1$. It is a convex QP solved with Lagrange multipliers (KKT conditions, dual form)."
  },
  {
   "m": 12,
@@ -1389,7 +1389,7 @@ window.QUIZ_BANK = [
    "Neither $x_1$ nor $x_2$ satisfies the constraint."
   ],
   "a": 1,
-  "e": "Matches the course assignment key: $x_1$ does not satisfy the constraint, but $x_2$ does."
+  "e": "$x_1$: $w^Tx_1+b=2(2)-1(1)-3=0$, so $y_1\\cdot0=0<1$: violates. $x_2$: $2(1)-3-3=-4$, so $y_2\\cdot(-4)=4\\ge1$: satisfied. Only $x_2$ satisfies the constraint."
  },
  {
   "m": 12,
@@ -1402,7 +1402,7 @@ window.QUIZ_BANK = [
    "Find the minimum margin hyperplane for a linear SVM classifier."
   ],
   "a": 2,
-  "e": "Matches the course assignment key: Find the maximum margin hyperplane for a linear SVM classifier."
+  "e": "The Lagrangian turns the constrained margin-maximisation problem (minimise $\\frac12\\|w\\|^2$ subject to the classification constraints) into an unconstrained form whose solution is the MAXIMUM-margin hyperplane for a linear SVM."
  },
  {
   "m": 12,
@@ -1415,7 +1415,7 @@ window.QUIZ_BANK = [
    "Because $\\|w\\|$ represents the number of misclassified reliability observations."
   ],
   "a": 0,
-  "e": "Matches the course assignment key: Because the geometric margin is inversely proportional to $\\|w\\|$."
+  "e": "The distance from the margin boundary to the hyperplane is $1/\\|w\\|$ (total margin $2/\\|w\\|$), so shrinking $\\|w\\|$ makes the margin larger. Squaring just makes the objective smooth and convex."
  },
  {
   "m": 12,
@@ -1428,7 +1428,7 @@ window.QUIZ_BANK = [
    "A-III; B-IV; C-I; D-II"
   ],
   "a": 3,
-  "e": "Matches the course assignment key: A-III; B-IV; C-I; D-II"
+  "e": "Linear: $x^Ty$. Gaussian (RBF): $\\exp(-\\|x-y\\|^2/2\\sigma^2)$. Polynomial: $(x^Ty+1)^p$. Laplacian: $\\exp(-\\lambda\\|x-y\\|)$ (not squared). So A-III, B-IV, C-I, D-II."
  },
  {
   "m": 12,
@@ -1441,7 +1441,7 @@ window.QUIZ_BANK = [
    "In the OVO strategy, the number of classifiers possible is n, whereas, in the OVA strategy, the number of classifiers possible is n(n-1)/2"
   ],
   "a": 2,
-  "e": "Matches the course assignment key: In the OVO strategy, the number of classifiers possible is n(n-1)/2, whereas, in the OVA strategy, the number of classifiers possible is n"
+  "e": "OvO builds one classifier per pair of classes, $\\binom n2=n(n-1)/2$. OvA builds one classifier per class (that class vs the rest), so $n$."
  },
  {
   "m": 12,
@@ -1454,7 +1454,7 @@ window.QUIZ_BANK = [
    "SVM learning strategy can be applied to classify both linear as well as non-linear training data efficiently"
   ],
   "a": 0,
-  "e": "Matches the course assignment key: SVM learning strategy finds only a local minimum of the objective function"
+  "e": "The SVM dual is a convex quadratic program, so it has a single GLOBAL minimum with no spurious local minima. 'Finds only a local minimum' is therefore the false statement."
  },
  {
   "m": 12,
@@ -1467,7 +1467,7 @@ window.QUIZ_BANK = [
    "Increasing the training-set size without changing the classifier"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: Polynomial or RBF kernel SVM"
+  "e": "Concentric (ring) classes are not separable by a straight line. A kernel SVM (RBF or polynomial) maps the data so that a curved boundary separates them. Raising $C$ in a linear SVM can't create a curved boundary."
  },
  {
   "m": 12,
@@ -1480,7 +1480,7 @@ window.QUIZ_BANK = [
    "SVM decision boundaries depend on the density of training points near the hyperplane, not on any specific subset of points."
   ],
   "a": 0,
-  "e": "Matches the course assignment key: SVM decision boundaries are determined only by the support vectors; non-support-vector points have no influence on the final hyperplane, regardless of their position relative to the margin."
+  "e": "The decision boundary is defined by the support vectors only (points with $\\alpha_i>0$). Deleting non-support vectors leaves the optimal hyperplane unchanged. SVM is not a lazy learner and not every point matters."
  },
  {
   "m": 12,
@@ -1493,7 +1493,7 @@ window.QUIZ_BANK = [
    "1.6"
   ],
   "a": 1,
-  "e": "Matches the course assignment key: 0.4"
+  "e": "The soft-margin constraint is $y_i(w^Tx_i+b)\\ge1-\\xi_i$. With a margin value of 0.6, $\\xi_i\\ge1-0.6=0.4$, so the minimum slack is 0.4."
  },
  {
   "m": 1,
@@ -2755,5 +2755,863 @@ window.QUIZ_BANK = [
   ],
   "a": 0,
   "e": "$\\xi=\\max(0,1-yf)=1.5$."
+ },
+ {
+  "m": 1,
+  "src": "lecture",
+  "q": "Five measurements are 4, 8, 6, 5, 7. The sample variance is:",
+  "o": [
+   "1.58",
+   "2.5",
+   "10",
+   "2.0"
+  ],
+  "a": 1,
+  "e": "Mean $=6$; deviations$^2$: 4,4,0,1,1 sum to 10; divide by $n-1=4$: $2.5$. (Dividing by $n$ gives 2; $\\sqrt{2.5}=1.58$ is the standard deviation.)"
+ },
+ {
+  "m": 1,
+  "src": "lecture",
+  "q": "The mean of 10, 12, 14 and $x$ is 13. Find $x$.",
+  "o": [
+   "14",
+   "18",
+   "13",
+   "16"
+  ],
+  "a": 3,
+  "e": "Total $=4\\times13=52$; the known three sum to 36, so $x=52-36=16$."
+ },
+ {
+  "m": 1,
+  "src": "lecture",
+  "q": "Manufacturers run \"burn-in\" tests on electronic units before shipping mainly to:",
+  "o": [
+   "Increase the wear-out hazard",
+   "Measure the useful-life MTTF only",
+   "Reduce the variance of the lifetime",
+   "Weed out infant-mortality failures"
+  ],
+  "a": 3,
+  "e": "Weak units fail early under stress, so the shipped population has already passed the decreasing-hazard (infant mortality) phase."
+ },
+ {
+  "m": 1,
+  "src": "lecture",
+  "q": "After a break-in period, a hydraulic pump fails at a roughly constant rate from random causes. Which region of the bathtub curve is this and which model is natural?",
+  "o": [
+   "Wear-out; exponential",
+   "Useful life; exponential",
+   "Wear-out; Weibull with $\\beta<1$",
+   "Infant mortality; Weibull with $\\beta>1$"
+  ],
+  "a": 1,
+  "e": "A constant hazard rate means the useful-life region, and the exponential distribution is the only one with constant $h(t)$."
+ },
+ {
+  "m": 2,
+  "src": "lecture",
+  "q": "Two independent components in series have reliabilities 0.98 and 0.96. System reliability is:",
+  "o": [
+   "0.9600",
+   "0.9992",
+   "0.9800",
+   "0.9408"
+  ],
+  "a": 3,
+  "e": "In series both must work: $0.98\\times0.96=0.9408$, lower than either component."
+ },
+ {
+  "m": 2,
+  "src": "lecture",
+  "q": "Three independent components each with reliability 0.7 are in parallel. System reliability is:",
+  "o": [
+   "0.343",
+   "0.900",
+   "0.700",
+   "0.973"
+  ],
+  "a": 3,
+  "e": "Parallel fails only if ALL fail: $1-(0.3)^3=1-0.027=0.973$."
+ },
+ {
+  "m": 2,
+  "src": "lecture",
+  "q": "$P(A)=0.3$, $P(B)=0.5$, $P(A\\cap B)=0.15$. The events are:",
+  "o": [
+   "Complementary",
+   "Dependent",
+   "Independent",
+   "Mutually exclusive"
+  ],
+  "a": 2,
+  "e": "Independence needs $P(A\\cap B)=P(A)P(B)=0.15$, which holds. Mutually exclusive would need $P(A\\cap B)=0$."
+ },
+ {
+  "m": 2,
+  "src": "lecture",
+  "q": "Machine A makes 40% of items (3% defective), Machine B makes 60% (1% defective). An item is found defective. $P(\\text{from A})$ is:",
+  "o": [
+   "0.03",
+   "0.40",
+   "0.50",
+   "0.667"
+  ],
+  "a": 3,
+  "e": "Bayes: $\\dfrac{0.4(0.03)}{0.4(0.03)+0.6(0.01)}=\\dfrac{0.012}{0.018}=0.667$. A is over-represented among defectives because of its higher defect rate."
+ },
+ {
+  "m": 2,
+  "src": "lecture",
+  "q": "$P(A)=0.5$, $P(B)=0.4$, $P(A\\cap B)=0.1$. The probability of neither A nor B is:",
+  "o": [
+   "0.5",
+   "0.1",
+   "0.8",
+   "0.2"
+  ],
+  "a": 3,
+  "e": "$P(A\\cup B)=0.5+0.4-0.1=0.8$; neither $=1-0.8=0.2$."
+ },
+ {
+  "m": 3,
+  "src": "lecture",
+  "q": "$X\\sim\\text{Bin}(8,0.5)$. $P(X=4)$ is approximately:",
+  "o": [
+   "0.5",
+   "0.2734",
+   "0.4096",
+   "0.0625"
+  ],
+  "a": 1,
+  "e": "$\\binom84(0.5)^8=70/256=0.2734$."
+ },
+ {
+  "m": 3,
+  "src": "lecture",
+  "q": "A call centre receives on average 5 calls per day (Poisson). $P(\\text{at most 2 calls})$ is approximately:",
+  "o": [
+   "0.1247",
+   "0.0067",
+   "0.0842",
+   "0.4405"
+  ],
+  "a": 0,
+  "e": "$e^{-5}(1+5+12.5)=0.006738\\times18.5=0.1247$."
+ },
+ {
+  "m": 3,
+  "src": "lecture",
+  "q": "The number of passing units out of 15, each passing independently with $p=0.6$, has mean and variance:",
+  "o": [
+   "Mean 9, variance 3.6",
+   "Mean 9, variance 0.24",
+   "Mean 6, variance 3.6",
+   "Mean 9, variance 5.4"
+  ],
+  "a": 0,
+  "e": "$np=9$ and $np(1-p)=15(0.6)(0.4)=3.6$."
+ },
+ {
+  "m": 3,
+  "src": "lecture",
+  "q": "Each trial succeeds with $p=0.3$. $P(\\text{first success on the 3rd trial})$ is:",
+  "o": [
+   "0.343",
+   "0.147",
+   "0.9",
+   "0.027"
+  ],
+  "a": 1,
+  "e": "Geometric: $(0.7)^2(0.3)=0.147$."
+ },
+ {
+  "m": 3,
+  "src": "lecture",
+  "q": "A PMF is $P(X=x)=kx$ for $x=1,2,3,4$. The value of $k$ is:",
+  "o": [
+   "0.2",
+   "0.25",
+   "0.1",
+   "1"
+  ],
+  "a": 2,
+  "e": "The probabilities must sum to 1: $k(1+2+3+4)=10k=1$."
+ },
+ {
+  "m": 3,
+  "src": "lecture",
+  "q": "Cards are dealt without replacement from a deck and you count aces in a 5-card hand. Which distribution models the count?",
+  "o": [
+   "Geometric",
+   "Hypergeometric",
+   "Binomial",
+   "Poisson"
+  ],
+  "a": 1,
+  "e": "Without replacement from a finite population the success probability changes after each draw, which is the hypergeometric setting."
+ },
+ {
+  "m": 4,
+  "src": "lecture",
+  "q": "Time to failure is exponential with mean 10 h. $P(T>5)$ is:",
+  "o": [
+   "$e^{-2}$",
+   "$e^{-0.5}\\approx0.6065$",
+   "0.3935",
+   "0.5"
+  ],
+  "a": 1,
+  "e": "$R(5)=e^{-5/10}$. Note 0.3935 is $P(T\\le5)$."
+ },
+ {
+  "m": 4,
+  "src": "lecture",
+  "q": "$X\\sim N(50,4^2)$. $P(X>56)$ is approximately:",
+  "o": [
+   "0.0668",
+   "0.3085",
+   "0.0228",
+   "0.1587"
+  ],
+  "a": 0,
+  "e": "$z=(56-50)/4=1.5$ and $P(Z>1.5)=0.0668$."
+ },
+ {
+  "m": 4,
+  "src": "lecture",
+  "q": "$X\\sim N(50,4^2)$. Which value is the 97.72nd percentile?",
+  "o": [
+   "62",
+   "54",
+   "56",
+   "58"
+  ],
+  "a": 3,
+  "e": "$P(Z<2)=0.9772$, so $x=\\mu+2\\sigma=58$."
+ },
+ {
+  "m": 4,
+  "src": "lecture",
+  "q": "A PDF is $f(x)=2x$ on $[0,1]$. $P(X>0.5)$ is:",
+  "o": [
+   "0.5",
+   "0.75",
+   "1",
+   "0.25"
+  ],
+  "a": 1,
+  "e": "$P(X>0.5)=1-\\int_0^{0.5}2x\\,dx=1-0.25=0.75$."
+ },
+ {
+  "m": 4,
+  "src": "lecture",
+  "q": "A Gamma distribution has shape 4 and scale 2. Its mean and variance are:",
+  "o": [
+   "8 and 32",
+   "6 and 12",
+   "8 and 16",
+   "2 and 4"
+  ],
+  "a": 2,
+  "e": "Mean $\\alpha\\beta=8$; variance $\\alpha\\beta^2=4\\times4=16$."
+ },
+ {
+  "m": 4,
+  "src": "lecture",
+  "q": "A Weibull with $\\beta=2$, $\\eta=500$ h. $R(250)$ is:",
+  "o": [
+   "$e^{-0.5}$",
+   "$e^{-0.25}\\approx0.779$",
+   "0.5",
+   "0.25"
+  ],
+  "a": 1,
+  "e": "$R=\\exp[-(250/500)^2]=e^{-0.25}$."
+ },
+ {
+  "m": 5,
+  "src": "lecture",
+  "q": "Households have $\\sigma=30$. What sample size gives a standard error of the mean equal to 2?",
+  "o": [
+   "60",
+   "450",
+   "225",
+   "15"
+  ],
+  "a": 2,
+  "e": "$2=30/\\sqrt n\\Rightarrow\\sqrt n=15\\Rightarrow n=225$."
+ },
+ {
+  "m": 5,
+  "src": "lecture",
+  "q": "$\\mu=50$, $\\sigma=12$, $n=36$. $P(\\bar X<48)$ is approximately:",
+  "o": [
+   "0.1587",
+   "0.0228",
+   "0.4325",
+   "0.3085"
+  ],
+  "a": 0,
+  "e": "$SE=2$, $z=(48-50)/2=-1$, so $0.1587$."
+ },
+ {
+  "m": 5,
+  "src": "lecture",
+  "q": "The standard error of a sample proportion with $p=0.5$, $n=100$ is:",
+  "o": [
+   "0.05",
+   "0.25",
+   "0.005",
+   "0.5"
+  ],
+  "a": 0,
+  "e": "$\\sqrt{p(1-p)/n}=\\sqrt{0.25/100}=0.05$."
+ },
+ {
+  "m": 5,
+  "src": "lecture",
+  "q": "A sample of $n=10$ from a roughly normal population has unknown $\\sigma$. The sampling distribution of the standardised mean is:",
+  "o": [
+   "$F$ with (9, 9) d.f.",
+   "Standard normal",
+   "$\\chi^2$ with 9 d.f.",
+   "$t$ with 9 degrees of freedom"
+  ],
+  "a": 3,
+  "e": "Estimating $\\sigma$ with $s$ gives a $t$ statistic with $n-1$ d.f."
+ },
+ {
+  "m": 5,
+  "src": "lecture",
+  "q": "Two independent sample means have standard errors 3 and 4. The standard error of their difference is:",
+  "o": [
+   "12",
+   "1",
+   "7",
+   "5"
+  ],
+  "a": 3,
+  "e": "Variances add: $\\sqrt{3^2+4^2}=5$."
+ },
+ {
+  "m": 6,
+  "src": "lecture",
+  "q": "A 95% CI uses $\\sigma=8$, $n=64$. The margin of error is:",
+  "o": [
+   "0.98",
+   "1.96",
+   "8",
+   "3.92"
+  ],
+  "a": 1,
+  "e": "$SE=8/8=1$, margin $=1.96\\times1$."
+ },
+ {
+  "m": 6,
+  "src": "lecture",
+  "q": "$\\bar x=100$, $\\sigma=15$, $n=100$. The 90% CI for $\\mu$ is approximately:",
+  "o": [
+   "(97.53, 102.47)",
+   "(98.5, 101.5)",
+   "(96.1, 103.9)",
+   "(95, 105)"
+  ],
+  "a": 0,
+  "e": "$SE=1.5$; margin $=1.645\\times1.5=2.47$."
+ },
+ {
+  "m": 6,
+  "src": "lecture",
+  "q": "The MLE of a binomial proportion $p$ from $x$ successes in $n$ trials is:",
+  "o": [
+   "$x$",
+   "$n/x$",
+   "$\\sqrt{x/n}$",
+   "$x/n$"
+  ],
+  "a": 3,
+  "e": "Maximising $x\\ln p+(n-x)\\ln(1-p)$ gives $\\hat p=x/n$."
+ },
+ {
+  "m": 6,
+  "src": "lecture",
+  "q": "Using the conservative $p=0.5$, the sample size for a 95% margin of error of 0.05 on a proportion is:",
+  "o": [
+   "97",
+   "196",
+   "1537",
+   "385"
+  ],
+  "a": 3,
+  "e": "$n=(1.96/0.05)^2(0.25)=384.16\\to385$."
+ },
+ {
+  "m": 6,
+  "src": "lecture",
+  "q": "Doubling the sample size changes the CI margin of error by a factor of:",
+  "o": [
+   "1/2",
+   "2",
+   "$1/\\sqrt2\\approx0.71$",
+   "1/4"
+  ],
+  "a": 2,
+  "e": "Margin $\\propto1/\\sqrt n$."
+ },
+ {
+  "m": 7,
+  "src": "lecture",
+  "q": "$H_0:\\mu=100$; $n=9$, $\\bar x=105$, $s=6$, two-sided $\\alpha=0.05$, $t_{8,0.025}=2.306$. The decision is:",
+  "o": [
+   "Fail to reject ($t=2.5<2.9$)",
+   "Fail to reject ($t=0.83$)",
+   "Reject $H_0$ ($t=2.5>2.306$)",
+   "Reject ($t=5$)"
+  ],
+  "a": 2,
+  "e": "$t=(105-100)/(6/3)=2.5$."
+ },
+ {
+  "m": 7,
+  "src": "lecture",
+  "q": "A left-tailed $z$ test gives $z=-1.2$ (p = 0.1151) at $\\alpha=0.05$. You should:",
+  "o": [
+   "Increase $\\alpha$ after seeing the data",
+   "Fail to reject $H_0$",
+   "Reject $H_0$",
+   "Accept $H_0$ as proven"
+  ],
+  "a": 1,
+  "e": "p-value $>\\alpha$; absence of evidence is not proof of $H_0$."
+ },
+ {
+  "m": 7,
+  "src": "lecture",
+  "q": "A genuine defect in a batch exists but the test fails to detect it. This is a:",
+  "o": [
+   "Type II error",
+   "Type I error",
+   "Sampling bias",
+   "Correct decision"
+  ],
+  "a": 0,
+  "e": "Failing to reject a false $H_0$ has probability $\\beta$."
+ },
+ {
+  "m": 7,
+  "src": "lecture",
+  "q": "With $\\alpha$ fixed, increasing the sample size will typically:",
+  "o": [
+   "Increase $\\alpha$",
+   "Have no effect on $\\beta$",
+   "Decrease the power",
+   "Increase the power"
+  ],
+  "a": 3,
+  "e": "Smaller standard error separates the sampling distributions under $H_0$ and $H_a$."
+ },
+ {
+  "m": 7,
+  "src": "lecture",
+  "q": "A die is rolled 60 times with counts 8, 12, 9, 11, 10, 10 (expected 10 each). The $\\chi^2$ statistic and d.f. are:",
+  "o": [
+   "10 with 5 d.f.",
+   "1.0 with 5 d.f.",
+   "0.2 with 5 d.f.",
+   "1.0 with 6 d.f."
+  ],
+  "a": 1,
+  "e": "$(4+4+1+1+0+0)/10=1.0$; d.f. $=6-1=5$."
+ },
+ {
+  "m": 7,
+  "src": "lecture",
+  "q": "p-value = 0.03. At $\\alpha=0.01$ the conclusion is:",
+  "o": [
+   "Reject $H_0$",
+   "The test is invalid",
+   "Fail to reject $H_0$",
+   "Reject at 97% confidence only"
+  ],
+  "a": 2,
+  "e": "Reject only if $p\\le\\alpha$."
+ },
+ {
+  "m": 8,
+  "src": "lecture",
+  "q": "One-way ANOVA with 3 groups of 5 observations. The d.f. (between, within) are:",
+  "o": [
+   "(3, 15)",
+   "(12, 2)",
+   "(2, 12)",
+   "(2, 14)"
+  ],
+  "a": 2,
+  "e": "$k-1=2$; $N-k=15-3=12$."
+ },
+ {
+  "m": 8,
+  "src": "lecture",
+  "q": "$MSB=40$ and $MSE=8$. The F statistic is:",
+  "o": [
+   "32",
+   "48",
+   "0.2",
+   "5"
+  ],
+  "a": 3,
+  "e": "$F=MSB/MSE=40/8$."
+ },
+ {
+  "m": 8,
+  "src": "lecture",
+  "q": "$SSE=90$, $N=18$, $a=3$ groups. $MSE$ is:",
+  "o": [
+   "30",
+   "5",
+   "6",
+   "4.5"
+  ],
+  "a": 2,
+  "e": "$SSE/(N-a)=90/15=6$."
+ },
+ {
+  "m": 8,
+  "src": "lecture",
+  "q": "$SST=500$, $SSB=350$. The proportion of total variability explained by the factor is:",
+  "o": [
+   "0.50",
+   "0.70",
+   "0.30",
+   "1.43"
+  ],
+  "a": 1,
+  "e": "$SSB/SST=350/500$; $SSW=150$."
+ },
+ {
+  "m": 9,
+  "src": "lecture",
+  "q": "A correlation of $r=-0.8$ between load and fatigue life means:",
+  "o": [
+   "A weak positive association",
+   "80% of values are negative",
+   "No relation",
+   "A strong negative linear association; $r^2=0.64$"
+  ],
+  "a": 3,
+  "e": "The sign shows direction, $|r|$ strength, and $r^2$ the variance explained."
+ },
+ {
+  "m": 9,
+  "src": "lecture",
+  "q": "Points (1,3), (2,5), (3,7). The least-squares line is:",
+  "o": [
+   "$\\hat y=3+x$",
+   "$\\hat y=2+x$",
+   "$\\hat y=1+3x$",
+   "$\\hat y=1+2x$"
+  ],
+  "a": 3,
+  "e": "They lie exactly on a line: slope 2, intercept $3-2=1$."
+ },
+ {
+  "m": 9,
+  "src": "lecture",
+  "q": "$S_{xy}=-300$, $S_{xx}=400$, $S_{yy}=400$. Pearson $r$ is:",
+  "o": [
+   "0.75",
+   "-1.5",
+   "-0.5625",
+   "-0.75"
+  ],
+  "a": 3,
+  "e": "$r=-300/\\sqrt{400\\times400}=-0.75$."
+ },
+ {
+  "m": 9,
+  "src": "lecture",
+  "q": "Spearman correlation with $n=6$ and $\\sum d^2=14$ is:",
+  "o": [
+   "0.6",
+   "0.4",
+   "0.23",
+   "0.86"
+  ],
+  "a": 0,
+  "e": "$1-6(14)/(6\\times35)=1-0.4=0.6$."
+ },
+ {
+  "m": 9,
+  "src": "lecture",
+  "q": "A fitted model is $\\hat y=20+3x$. At $x=5$ the observed $y$ is 38. The residual is:",
+  "o": [
+   "3",
+   "35",
+   "18",
+   "-3"
+  ],
+  "a": 0,
+  "e": "Prediction $=35$; residual $=y-\\hat y=38-35=3$."
+ },
+ {
+  "m": 10,
+  "src": "lecture",
+  "q": "AR(1) with $\\phi=0.8$, no constant, and $X_{t-1}=50$. The forecast of $X_t$ is:",
+  "o": [
+   "40",
+   "58",
+   "62.5",
+   "0.8"
+  ],
+  "a": 0,
+  "e": "$\\hat X_t=\\phi X_{t-1}=40$."
+ },
+ {
+  "m": 10,
+  "src": "lecture",
+  "q": "AR(1) with $\\phi=0.6$, no constant, last value 100. The 2-step-ahead forecast is:",
+  "o": [
+   "72",
+   "120",
+   "60",
+   "36"
+  ],
+  "a": 3,
+  "e": "One step: 60; two steps: $0.6\\times60=\\phi^2\\times100=36$."
+ },
+ {
+  "m": 10,
+  "src": "lecture",
+  "q": "For a stationary AR(1) with $\\phi=0.5$, the autocorrelation at lag 2 is:",
+  "o": [
+   "0.5",
+   "1",
+   "0",
+   "0.25"
+  ],
+  "a": 3,
+  "e": "$\\rho_k=\\phi^k$, so $\\rho_2=0.25$."
+ },
+ {
+  "m": 10,
+  "src": "lecture",
+  "q": "For an AR(1) process, the Yule–Walker estimate of $\\phi$ equals:",
+  "o": [
+   "The mean of the series",
+   "The lag-2 autocorrelation",
+   "The lag-1 autocorrelation $\\hat\\rho_1$",
+   "The variance of the series"
+  ],
+  "a": 2,
+  "e": "The Yule–Walker equation for $p=1$ is $\\rho_1=\\phi\\rho_0=\\phi$."
+ },
+ {
+  "m": 10,
+  "src": "lecture",
+  "q": "A series with a clear upward trend is usually made stationary by:",
+  "o": [
+   "Removing the first value",
+   "Squaring",
+   "Adding noise",
+   "Differencing"
+  ],
+  "a": 3,
+  "e": "$Y_t=X_t-X_{t-1}$ removes a linear trend."
+ },
+ {
+  "m": 10,
+  "src": "lecture",
+  "q": "After fitting an AR model, a good model should leave residuals that are:",
+  "o": [
+   "White noise (uncorrelated)",
+   "Strongly autocorrelated",
+   "Increasing",
+   "Equal to the data"
+  ],
+  "a": 0,
+  "e": "Remaining autocorrelation means the model missed structure."
+ },
+ {
+  "m": 10,
+  "src": "lecture",
+  "q": "Compared with ordinary regression on time index, an AR model:",
+  "o": [
+   "Needs no historical data",
+   "Uses past values of the series as predictors to capture serial dependence",
+   "Only fits constant series",
+   "Ignores autocorrelation"
+  ],
+  "a": 1,
+  "e": "Time-series data are autocorrelated, violating the independence assumption of plain regression."
+ },
+ {
+  "m": 10,
+  "src": "lecture",
+  "q": "An AR(2) model for hourly load needs which inputs?",
+  "o": [
+   "Only the daily mean",
+   "The two previous hourly values",
+   "Two random numbers",
+   "The next two values"
+  ],
+  "a": 1,
+  "e": "$X_t=c+\\phi_1X_{t-1}+\\phi_2X_{t-2}+\\varepsilon_t$."
+ },
+ {
+  "m": 11,
+  "src": "lecture",
+  "q": "logit$(p)=-3+1.5x$. At $x=3$, $p$ is approximately:",
+  "o": [
+   "0.818",
+   "0.182",
+   "0.95",
+   "0.5"
+  ],
+  "a": 0,
+  "e": "$z=1.5$; $p=1/(1+e^{-1.5})=0.818$."
+ },
+ {
+  "m": 11,
+  "src": "lecture",
+  "q": "A logistic coefficient of $-0.693$ means each unit increase in $x$ multiplies the odds by about:",
+  "o": [
+   "-0.693",
+   "2",
+   "0.693",
+   "0.5"
+  ],
+  "a": 3,
+  "e": "$e^{-0.693}=0.5$ (odds halve)."
+ },
+ {
+  "m": 11,
+  "src": "lecture",
+  "q": "The odds of failure are 3. The probability of failure is:",
+  "o": [
+   "0.67",
+   "0.33",
+   "3",
+   "0.75"
+  ],
+  "a": 3,
+  "e": "$p=\\text{odds}/(1+\\text{odds})=3/4$."
+ },
+ {
+  "m": 11,
+  "src": "lecture",
+  "q": "Raising the classification threshold from 0.5 to 0.8 generally:",
+  "o": [
+   "Predicts more positives",
+   "Changes the fitted coefficients",
+   "Predicts fewer positives (higher precision, lower recall)",
+   "Has no effect"
+  ],
+  "a": 2,
+  "e": "Only cases with $\\hat p>0.8$ are labelled positive; the model itself is unchanged."
+ },
+ {
+  "m": 11,
+  "src": "lecture",
+  "q": "Risk is classified as Low, Medium or High (three unordered classes). Which model fits?",
+  "o": [
+   "Poisson regression",
+   "Simple linear regression",
+   "Binary logistic regression only",
+   "Multinomial logistic regression"
+  ],
+  "a": 3,
+  "e": "It outputs a probability for each of the $K>2$ classes via softmax."
+ },
+ {
+  "m": 12,
+  "src": "lecture",
+  "q": "$P(F)=P(O)=0.5$; $P(x_1|F)=0.6$, $P(x_2|F)=0.5$; $P(x_1|O)=0.2$, $P(x_2|O)=0.4$. Naive Bayes predicts:",
+  "o": [
+   "Operational (0.04 vs 0.15)",
+   "Failed (0.15 vs 0.04)",
+   "Failed (0.30 vs 0.08)",
+   "Tie"
+  ],
+  "a": 1,
+  "e": "$0.5\\times0.6\\times0.5=0.15$ vs $0.5\\times0.2\\times0.4=0.04$."
+ },
+ {
+  "m": 12,
+  "src": "lecture",
+  "q": "The Euclidean distance between (1,1) and (4,5) is:",
+  "o": [
+   "3",
+   "7",
+   "5",
+   "25"
+  ],
+  "a": 2,
+  "e": "$\\sqrt{3^2+4^2}=5$."
+ },
+ {
+  "m": 12,
+  "src": "lecture",
+  "q": "For a 2-class kNN, using an odd $k$ helps because:",
+  "o": [
+   "It guarantees accuracy",
+   "It reduces dimensionality",
+   "It avoids tied votes",
+   "It speeds training"
+  ],
+  "a": 2,
+  "e": "An odd $k$ cannot split evenly between two classes."
+ },
+ {
+  "m": 12,
+  "src": "lecture",
+  "q": "A linear SVM has $w=(1,1)$. The margin width $2/\\|w\\|$ is:",
+  "o": [
+   "1",
+   "2",
+   "$\\sqrt2\\approx1.414$",
+   "0.707"
+  ],
+  "a": 2,
+  "e": "$\\|w\\|=\\sqrt2$."
+ },
+ {
+  "m": 12,
+  "src": "lecture",
+  "q": "A correctly classified point has $y_i f(x_i)=1.5$. Its slack $\\xi_i$ is:",
+  "o": [
+   "0",
+   "-0.5",
+   "0.5",
+   "1.5"
+  ],
+  "a": 0,
+  "e": "It satisfies $y f\\ge1$, so $\\xi=\\max(0,1-1.5)=0$."
+ },
+ {
+  "m": 12,
+  "src": "lecture",
+  "q": "A value never seen with a class (count 0) among 5 class records and 3 possible categories. The Laplace ($\\alpha=1$) estimate is:",
+  "o": [
+   "1/5",
+   "1/3",
+   "1/8",
+   "0"
+  ],
+  "a": 2,
+  "e": "$(0+1)/(5+3)=0.125$."
+ },
+ {
+  "m": 12,
+  "src": "lecture",
+  "q": "In an RBF kernel SVM, increasing $\\sigma$ (kernel width) generally makes the boundary:",
+  "o": [
+   "Linear only",
+   "Smoother (less flexible)",
+   "Unchanged",
+   "More jagged"
+  ],
+  "a": 1,
+  "e": "$\\exp(-\\|x-y\\|^2/2\\sigma^2)$ with large $\\sigma$ treats distant points as similar."
  }
 ];
